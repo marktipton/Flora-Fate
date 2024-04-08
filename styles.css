@@ -39,7 +39,7 @@ header {
 }
 
 .background-img {
-  background-image: url("images/new-frame.svg");
+  background-image: url("images/frame.PNG");
   position: absolute;
   width: 1440px;
   height: 1093px;
@@ -82,7 +82,7 @@ header {
   text-align: center;
   height: 300px;
   width: 300px;
-  position: absolute;
+  position: relative;
   top: 90%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -94,6 +94,4 @@ header {
   margin: 0;
   text-align: center;
 }
-
-
 
