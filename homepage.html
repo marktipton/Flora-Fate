@@ -11,7 +11,7 @@
         <script src="scripts.js"></script>
     </head>
     <body>
-        <div class="background-img"></div>
+        <div class="background-img">
         <!---Header-->
     <div class="box">
         <header>
@@ -21,12 +21,14 @@
             <div class="navigation">
                 <div class="user">USER</div>
             </div>
+            </div>
+        </div>
         </header>
 
         <!---Banner-->
         <main>
-            <section>
-                <div>
+            <section class="banner-content">
+                <div class="text-container">
                     <h1>Flora Fate</h1>
                     <h2>Unlock Your Cosmic Garden: Where Flora Meets Fate</h2>
                 </div>
@@ -34,10 +36,8 @@
             <form id="userInfoForm">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required><br><br>
-
                 <label for="birthday">Birthday:</label>
-                <input type="date" id="birthday" name="birthday"
-                    required><br><br>
+                <input type="date" id="birthday" name="birthday" required><br><br>
 
                     <button type="submit" style="border: none; background: none;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#627042" class="bi bi-flower3" viewBox="0 0 16 16">
