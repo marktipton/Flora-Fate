@@ -23,11 +23,12 @@ main {
 main form {
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
 body {
   width: 1440px;
-  height: 3718px;
+  height: 1093px;
   margin: 0;
 }
 
@@ -39,12 +40,15 @@ header {
 }
 
 .background-img {
-  background-image: url("images/Frame.svg");
+  background-image: url("images/frame.PNG");
   position: absolute;
   width: 1440px;
   height: 1093px;
   left: 0;
   top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .logo {
@@ -69,3 +73,31 @@ header {
   font-weight: 700;
   font-style: bold;
 }
+
+.banner-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+  width: 600px;
+  margin-top: 250px;
+}
+.text-container {
+  text-align: center;
+  height: 300px;
+  width: 300px;
+}
+  /* top: 90%; */
+  /* left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text-container h1,
+.text-container h2 {
+  margin: 0;
+  text-align: center;
+}
+
