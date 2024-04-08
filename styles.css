@@ -27,7 +27,7 @@ main form {
 
 body {
   width: 1440px;
-  height: 3718px;
+  height: 1093px;
   margin: 0;
 }
 
@@ -45,6 +45,9 @@ header {
   height: 1093px;
   left: 0;
   top: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
 }
 
 .logo {
@@ -69,3 +72,27 @@ header {
   font-weight: 700;
   font-style: bold;
 }
+
+.banner-content {
+  text-align: center;
+  height: 500px;
+  width: 500px;
+}
+.text-container {
+  text-align: center;
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.text-container h1,
+.text-container h2 {
+  margin: 0;
+}
+
+
+
