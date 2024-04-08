@@ -39,7 +39,7 @@ header {
 }
 
 .background-img {
-  background-image: url("images/Frame.svg");
+  background-image: url("images/new-frame.svg");
   position: absolute;
   width: 1440px;
   height: 1093px;
@@ -92,6 +92,7 @@ header {
 .text-container h1,
 .text-container h2 {
   margin: 0;
+  text-align: center;
 }
 
 
