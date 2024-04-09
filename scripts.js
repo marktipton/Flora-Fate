@@ -2,7 +2,7 @@ $(function () {
     const zodiacs = [
         { sign: 'Aries', startMonth: 3, startDay: 21, endMonth: 4, endDay: 19 , playlist_id: ''},
         { sign: 'Taurus', startMonth: 4, startDay: 20, endMonth: 5, endDay: 20 , playlist_id: ''},
-        { sign: 'Gemini', startMonth: 5, startDay: 21, endMonth: 6, endDay: 21 , playlist_id: ''},
+        { sign: 'Gemini', startMonth: 5, startDay: 21, endMonth: 6, endDay: 21 , playlist_id: '37i9dQZF1DWWVULl5wUsL9?utm_source=generator'},
         { sign: 'Cancer', startMonth: 6, startDay: 22, endMonth: 7, endDay: 22 , playlist_id: ''},
         { sign: 'Leo', startMonth: 7, startDay: 23, endMonth: 8, endDay: 22 , playlist_id: ''},
         { sign: 'Virgo', startMonth: 8, startDay: 23, endMonth: 9, endDay: 22 , playlist_id: ''},
