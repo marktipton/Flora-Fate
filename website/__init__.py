@@ -2,6 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path
 from flask_login import LoginManager
+import os
+
 
 db = SQLAlchemy()
 DB_NAME = "database.db"
@@ -36,7 +38,8 @@ def create_app():
 
 # Bug found here
 def create_database(app):
-    if not path.exists('website/' + DB_NAME):
+    db_path = os.path.join(app.root_path, DB_NAME)
+    if not path.exists(db_path):
         with app.app_context():
             db.create_all()
         print('Created Database!')
