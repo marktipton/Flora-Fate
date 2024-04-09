@@ -89,6 +89,104 @@ header {
   height: 300px;
   width: 300px;
 }
+
+.aquarius-photo {
+  background-image: url(images/aquarius.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.aries-photo {
+  background-image: url(images/aries.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.cancer-photo {
+  background-image: url(images/cancer.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.capricorn-photo {
+  background-image: url(images/capricorn.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.leo-photo {
+  background-image: url(images/leo.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.libra-photo {
+  background-image: url(images/libra.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.pisces-photo {
+  background-image: url(images/pisces.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sagittarius-photo {
+  background-image: url(images/sagittarius.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.scorpio-photo {
+  background-image: url(images/scorpio.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.taurus-photo {
+  background-image: url(images/taurus.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.virgo-photo {
+  background-image: url(images/virgo.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
   /* top: 90%; */
   /* left: 50%;
   transform: translate(-50%, -50%);
@@ -99,5 +197,45 @@ header {
 .text-container h2 {
   margin: 0;
   text-align: center;
+} */
+
+
+
+.cards {
+  display: flex;
+  flex-direction: column; /* This ensures that the title and the box of cards are laid out in a column */
+  align-items: center; /* This centers the items horizontally */
+  text-align: center;
+  color: var(--black-color);
 }
 
+.cards-title {
+  margin-bottom: 20px; /* Adjust as needed for spacing below the title */
+  font-weight: 300;
+  font-style: normal;
+  text-align: center;
+}
+
+.cards-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; /* This will evenly space the card items */
+  flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+  margin-top: 5%;
+  width: 80%;
+  margin-left: auto; /* Center the cards-box */
+  margin-right: auto; /* Center the cards-box */
+}
+
+.card {
+  flex-basis: 20%;
+  margin: 10px;
+  position: relative;
+}
+
+.card-text {
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
