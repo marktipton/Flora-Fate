@@ -47,4 +47,21 @@ $(function () {
             window.location.href = 'homepage.html';
         }
     });
+
+    function fetchPlaylist(zodiacSign) {
+        $.ajax({
+            url: 'https://api.spotify.com/v1/playlists/' + playlistId,
+            type: 'GET',
+            headers: {
+
+            },
+            success: function(data) {
+
+            },
+            error: function(xhr, status, error) {
+                console.error('Error fetching playlist:', error);
+            }
+
+        });
+    }
 });
