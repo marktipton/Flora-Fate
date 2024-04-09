@@ -12,4 +12,4 @@ def login():
 
 @views.route('/')
 def home():
-    return render_template("home.html", user=current_user)
+    return render_template("homepage.html", user=current_user)
