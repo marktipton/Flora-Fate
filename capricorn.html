@@ -2,9 +2,8 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="UTF-8">
-        <title>Capricorn</title>
+        <title>Flora Fate</title>
         <link rel="icon" href="images/FF_favicon.svg">
-
 
         <link rel="stylesheet" href="styles.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -12,23 +11,73 @@
     </head>
     <body>
         <div class="background-img">
-        <!---Header-->
-        <header>
-            <div>
-                <a><img src="images/FF_favicon.svg" alt="Logo"></a>
-            </div>
-            <div>
-                <a href="Link">USER</a>
-            </div>
-        </header>
+            <!---Header-->
+            <div class="box">
+                <header>
+                    <div class="logo">
+                        <a><img src="images/FF_favicon.svg" alt="logo"></a>
+                    </div>
+                    <div class="navigation">
+                        <div class="user">
+                            <!-- {% if user.is_authenticated %} -->
+                            <a href="{{ url_for('auth.logout') }}">Logout</a>
+                            <!-- {% else %} -->
+                            <a href="{{ url_for('auth.login') }}">Login</a>
+                            <a href="{{ url_for('auth.signUp') }}">Sign Up</a>
+                            <!-- {% endif %} -->
+                            <!-- adding a comment -->
+                        </div>
+                    </div>
+                </div>
+            </header>
+        </div>
+
+        <!---Banner-->
         <main>
-          <section>
-              <div>
-                  <h1>Capricorn</h1>
-                  <h2>Unlock Your Cosmic Garden: Where Flora Meets Fate</h2>
-              </div>
-          </section>
-      </main>
-    </body>
+            <section class="banner-content">
+                <div class="text-container">
+                    <h1>Capricorn</h1>
+                    <h2>Mountain</h2>
+                </div>
+                <div class="capricorn-photo"></div>
+                <section class="cards">
+                    <h1 class="cards-title">Unlock your garden</h1>
+                    <div class="cards-box">
+                        <div class="card">
+                            <img src="images/png" alt="flower">
+                            <div class="card-text">
+                                <h2 class="card-names">flower name</h2>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/png" alt="book">
+                            <div class="card-text">
+                                <h2 class="card-names">Book name and
+                                    author</h2>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/png" alt="movie">
+                            <div class="card-text">
+                                <h2 class="card-names">movie name</h2>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <img src="images/png" alt="playlist">
+                            <div class="card-text">
+                                <h2 class="card-names">Playlist name</h2>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <!---Footer--->
+            <footer>
+            </footer>
+        </body>
 
     </html>
