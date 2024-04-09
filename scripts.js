@@ -1,8 +1,8 @@
 $(function () {
     const zodiacs = [
-        { sign: 'Aries', startMonth: 3, startDay: 21, endMonth: 4, endDay: 19 , playlist_id: '37i9dQZF1DX2DC3Q7JOmYe?si=8b0a93da8920404e'},
+        { sign: 'Aries', startMonth: 3, startDay: 21, endMonth: 4, endDay: 19 , playlist_id: '37i9dQZF1DX2DC3Q7JOmYe'},
         { sign: 'Taurus', startMonth: 4, startDay: 20, endMonth: 5, endDay: 20 , playlist_id: ''},
-        { sign: 'Gemini', startMonth: 5, startDay: 21, endMonth: 6, endDay: 21 , playlist_id: '37i9dQZF1DWWVULl5wUsL9?si=20d1bed2a4d14814'},
+        { sign: 'Gemini', startMonth: 5, startDay: 21, endMonth: 6, endDay: 21 , playlist_id: '37i9dQZF1DWWVULl5wUsL9'},
         { sign: 'Cancer', startMonth: 6, startDay: 22, endMonth: 7, endDay: 22 , playlist_id: ''},
         { sign: 'Leo', startMonth: 7, startDay: 23, endMonth: 8, endDay: 22 , playlist_id: ''},
         { sign: 'Virgo', startMonth: 8, startDay: 23, endMonth: 9, endDay: 22 , playlist_id: ''},
@@ -45,6 +45,7 @@ $(function () {
 
         if (matchedZodiac) {
             fetchPlaylist(zodiacPlaylist_id);
+            console.log(zodiacPlaylist_id);
             window.location.href = matchedZodiac.toLowerCase() + '.html';
         } else {
             window.location.href = 'homepage.html';
@@ -60,11 +61,11 @@ $(function () {
                 'Authorization': `Bearer ${token}`
             },
             success: function(data) {
-                console.log(data);
+                console.log('Playlist fetched successfully:', data);
                 displayPlaylist(data);
             },
             error: function(xhr, status, error) {
-                console.error('Error fetching playlist:', error);
+                console.error('Error fetching playlist:', error, xhr, status);
             }
         });
     }
