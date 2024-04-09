@@ -40,3 +40,5 @@ def create_database(app):
         with app.app_context():
             db.create_all()
         print('Created Database!')
+
+# adding a little comment so maybe when I push github will finally have my changes
