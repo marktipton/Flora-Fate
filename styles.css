@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Zaloga';
-  src: url(fonts/Zaloga.ttf) format('opentype');
+  src: url(fonts/Zaloga.ttf) format('truetype');
   font-weight: normal;
 }
 
@@ -75,6 +75,7 @@ header {
 }
 
 .banner-content {
+  font: 'Zaloga';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -210,6 +211,7 @@ header {
 }
 
 .cards-title {
+  font: 'Zaloga';
   margin-bottom: 20px; /* Adjust as needed for spacing below the title */
   font-weight: 300;
   font-style: normal;
