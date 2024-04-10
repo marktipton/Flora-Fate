@@ -120,6 +120,24 @@ header {
   fill: transparent;
   width: 600px;
 }
+/* .text-container svg {
+  margin-top: 50px;
+} */
+/*
+.text-container svg {
+  z-index: 1;
+}
+*/
+/* .text-container svg {
+  padding-bottom: 10px;
+} */
+.text-container img {
+  margin-top: -35px;
+}
+
+.text-container h2 {
+  margin-top: 0;
+}
 
 /* ZODIAC PHOTOS */
 
