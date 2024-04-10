@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Zaloga';
-  src: url(fonts/Zaloga.ttf) format('opentype');
+  src: url(../fonts/Zaloga.ttf) format('opentype');
   font-weight: normal;
 }
 
@@ -40,7 +40,7 @@ header {
 }
 
 .background-img {
-  background-image: url("images/frame.PNG");
+  background-image: url("../images/frame.PNG");
   position: absolute;
   width: 1440px;
   height: 1093px;
@@ -91,7 +91,7 @@ header {
 }
 
 .aquarius-photo {
-  background-image: url(images/aquarius.png);
+  background-image: url(../images/aquarius.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -100,7 +100,7 @@ header {
 }
 
 .aries-photo {
-  background-image: url(images/aries.png);
+  background-image: url(../images/aries.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -108,7 +108,7 @@ header {
   background-size: cover;
 }
 .cancer-photo {
-  background-image: url(images/cancer.png);
+  background-image: url(../images/cancer.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -117,7 +117,7 @@ header {
 }
 
 .capricorn-photo {
-  background-image: url(images/capricorn.png);
+  background-image: url(../images/capricorn.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -126,7 +126,7 @@ header {
 }
 
 .leo-photo {
-  background-image: url(images/leo.png);
+  background-image: url(../images/leo.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -135,7 +135,7 @@ header {
 }
 
 .libra-photo {
-  background-image: url(images/libra.png);
+  background-image: url(../images/libra.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -144,7 +144,7 @@ header {
 }
 
 .pisces-photo {
-  background-image: url(images/pisces.png);
+  background-image: url(../images/pisces.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -153,7 +153,7 @@ header {
 }
 
 .sagittarius-photo {
-  background-image: url(images/sagittarius.png);
+  background-image: url(../images/sagittarius.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -162,7 +162,7 @@ header {
 }
 
 .scorpio-photo {
-  background-image: url(images/scorpio.png);
+  background-image: url(../images/scorpio.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -171,7 +171,7 @@ header {
 }
 
 .taurus-photo {
-  background-image: url(images/taurus.png);
+  background-image: url(../images/taurus.png);
   position: absolute;
   width: 200px;
   height: 200px;
@@ -180,7 +180,7 @@ header {
 }
 
 .virgo-photo {
-  background-image: url(images/virgo.png);
+  background-image: url(../images/virgo.png);
   position: absolute;
   width: 200px;
   height: 200px;
