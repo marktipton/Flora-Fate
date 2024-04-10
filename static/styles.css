@@ -1,6 +1,12 @@
 @font-face {
   font-family: 'Zaloga';
-  src: url(../fonts/Zaloga.ttf) format('opentype');
+  src: url(../fonts/Zaloga.ttf) format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Metro';
+  src: url(../fonts/MetroPhotograph.otf) format('opentype');
   font-weight: normal;
 }
 
@@ -75,7 +81,9 @@ header {
 }
 
 .banner-content {
-  font: 'Zaloga';
+  font-family: 'Zaloga';
+  color: #627042;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,11 +93,14 @@ header {
   width: 600px;
   margin-top: 250px;
 }
+
 .text-container {
   text-align: center;
   height: 300px;
   width: 300px;
 }
+
+/* ZODIAC PHOTOS */
 
 .aquarius-photo {
   background-image: url(../images/aquarius.png);
@@ -197,31 +208,20 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-  /* top: 90%; */
-  /* left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-}
 
-.text-container h1,
-.text-container h2 {
-  margin: 0;
-  text-align: center;
-} */
-
-
+/* CARDS */
 
 .cards {
   display: flex;
-  flex-direction: column; /* This ensures that the title and the box of cards are laid out in a column */
-  align-items: center; /* This centers the items horizontally */
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   color: var(--black-color);
 }
 
 .cards-title {
   font: 'Zaloga';
-  margin-bottom: 20px; /* Adjust as needed for spacing below the title */
+  margin-bottom: 20px;
   font-weight: 300;
   font-style: normal;
   text-align: center;
@@ -230,12 +230,12 @@ header {
 .cards-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-around; /* This will evenly space the card items */
-  flex-wrap: wrap; /* Allows cards to wrap in smaller screens */
+  justify-content: space-around;
+  flex-wrap: wrap;
   margin-top: 5%;
   width: 80%;
-  margin-left: auto; /* Center the cards-box */
-  margin-right: auto; /* Center the cards-box */
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .card {
@@ -245,6 +245,7 @@ header {
 }
 
 .card-text {
+  font: 'Metro', 14px;
   text-align: left;
   width: 80%;
   margin-left: 10%;
