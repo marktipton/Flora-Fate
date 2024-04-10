@@ -3,12 +3,12 @@
     <head>
         <meta charset="UTF-8">
         <title>Flora Fate</title>
-        <link rel="icon" href="website/templates/images/FF_favicon.svg">
+        <link rel="icon" href="../../images/FF_favicon.svg">
 
 
-        <link rel="stylesheet" href="/static/styles.css" />
+        <link rel="stylesheet" href="../../static/styles.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="/static/scripts.js"></script>
+        <script src="../../static/scripts.js"></script>
     </head>
     <body>
         <div class="background-img">
@@ -16,16 +16,10 @@
         <div class="box">
         <header>
             <div class="logo">
-                <a><img src="images/FF_favicon.svg" alt="logo"></a>
+                <a><img src="../../images/FF_favicon.svg" alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
-                    {% if user.is_authenticated %}
-                        <a href="{{ url_for('auth.logout') }}">Logout</a>
-                    {% else %}
-                        <a href="{{ url_for('auth.login') }}">Login</a>
-                        <a href="{{ url_for('auth.signUp') }}">Sign Up</a>
-                    {% endif %}
                 </div>
             </div>
             </div>
@@ -36,7 +30,19 @@
         <main>
             <section class="banner-content">
                 <div class="text-container">
-                    <h1>Flora Fate</h1>
+                    <!-- <div class="curved-text-container">
+                        <div class="curved-text">
+                            <h1>Flora Fate</h1>
+                        </div>
+                    </div> -->
+                    <svg width="520" height="260">
+                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <text class="curvedText" text-anchor="middle">
+                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                                Flora ⟡ Fate
+                            </textPath>
+                        </text>
+                    </svg>
                     <h2>Unlock Your Cosmic Garden: Where Flora Meets Fate</h2>
                 </div>
                 <form id="userInfoForm">
