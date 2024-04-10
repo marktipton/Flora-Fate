@@ -75,6 +75,7 @@ header {
 }
 
 .banner-content {
+  font: 'Zaloga';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -125,6 +126,15 @@ header {
   background-size: cover;
 }
 
+.gemini-photo {
+  background-image: url(../images/gemini.png);
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
 .leo-photo {
   background-image: url(../images/leo.png);
   position: absolute;
@@ -210,6 +220,7 @@ header {
 }
 
 .cards-title {
+  font: 'Zaloga';
   margin-bottom: 20px; /* Adjust as needed for spacing below the title */
   font-weight: 300;
   font-style: normal;
