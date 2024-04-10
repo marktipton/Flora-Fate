@@ -63,7 +63,7 @@ header {
   position: absolute;
   width: 169px;
   height: 30px;
-  left: 170px;
+  left: 30px;
   top: 35px;
 }
 
@@ -88,18 +88,32 @@ header {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   height: 600px;
   width: 600px;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  height: 300px;
-  width: 300px;
+  justify-content: space-between;
+  height: 450px;
+  width: 600px;
+}
+
+.curvedText {
+  font-size: 6rem;
+  fill: #627042;
+}
+
+#curve {
+  fill: transparent;
+  width: 600px;
 }
 
 /* ZODIAC PHOTOS */
