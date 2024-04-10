@@ -30,7 +30,19 @@
         <main>
             <section class="banner-content">
                 <div class="text-container">
-                    <h1>Flora Fate</h1>
+                    <!-- <div class="curved-text-container">
+                        <div class="curved-text">
+                            <h1>Flora Fate</h1>
+                        </div>
+                    </div> -->
+                    <svg width="520" height="260">
+                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <text class="curvedText" text-anchor="middle">
+                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                                Flora ⟡ Fate
+                            </textPath>
+                        </text>
+                    </svg>
                     <h2>Unlock Your Cosmic Garden: Where Flora Meets Fate</h2>
                 </div>
                 <form id="userInfoForm">
