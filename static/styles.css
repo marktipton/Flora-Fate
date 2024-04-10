@@ -149,9 +149,10 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 600px;
+  justify-content: space-between;
+  height: 800px;
   width: 600px;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .zodiac-container {
@@ -159,8 +160,12 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 200px;
+  height: 230px;
   width: 600px;
+}
+
+.zodiac-content h2 {
+  margin-top: -35px;
 }
 
 .aquarius-photo {
@@ -192,10 +197,12 @@ header {
 .capricorn-photo {
   background-image: url(../images/capricorn.png);
   align-items: center;
-  width: 300px;
-  height: 300px;
+  width: 500px;
+  height: 500px;
   background-repeat: no-repeat;
   background-size: cover;
+  /* margin-right: 50px; */
+  /* margin-bottom: -100px; */
 }
 
 .gemini-photo {
@@ -277,11 +284,14 @@ header {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  justify-content: start;
   color: var(--black-color);
+  margin-bottom: 50px;
 }
 
 .cards-title {
-  font: 'Zaloga';
+  font-family: 'Zaloga';
+  font-size: 18px;
   margin-bottom: 20px;
   font-weight: 300;
   font-style: normal;
@@ -302,22 +312,39 @@ header {
 
 .card {
   flex-basis: 20%;
-  margin: 10px;
+  margin-top: 50px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  width: 200px;
 }
 
 .small-img {
-width: 60%;
+width: 100%;
 height: auto;
 border-radius: 15px;
 background-color: #eeeeee;
 border: 3px solid #627042;
+/* margin-bottom: 0; */
 }
 
 .card-text {
-  font: 'Metro', 14px;
+  font: 'Metro', 12px;
   text-align: left;
-  width: 80%;
+  width: 100%;
   margin-left: 10%;
   margin-right: 10%;
+}
+
+.card-names {
+  font-family: 'Zaloga';
+  font-size: 14px;
+}
+
+.card-text p {
+  font-family: 'Zaloga';
+  font-size: 12px;
 }
