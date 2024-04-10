@@ -1,8 +1,8 @@
 $(function () {
     const zodiacs = [
-        { sign: 'Aries', startMonth: 3, startDay: 21, endMonth: 4, endDay: 19 , playlist_id: ''},
+        { sign: 'Aries', startMonth: 3, startDay: 21, endMonth: 4, endDay: 19 , playlist_id: '37i9dQZF1DX2DC3Q7JOmYe'},
         { sign: 'Taurus', startMonth: 4, startDay: 20, endMonth: 5, endDay: 20 , playlist_id: ''},
-        { sign: 'Gemini', startMonth: 5, startDay: 21, endMonth: 6, endDay: 21 , playlist_id: '37i9dQZF1DWWVULl5wUsL9?utm_source=generator'},
+        { sign: 'Gemini', startMonth: 5, startDay: 21, endMonth: 6, endDay: 21 , playlist_id: '37i9dQZF1DWWVULl5wUsL9'},
         { sign: 'Cancer', startMonth: 6, startDay: 22, endMonth: 7, endDay: 22 , playlist_id: ''},
         { sign: 'Leo', startMonth: 7, startDay: 23, endMonth: 8, endDay: 22 , playlist_id: ''},
         { sign: 'Virgo', startMonth: 8, startDay: 23, endMonth: 9, endDay: 22 , playlist_id: ''},
@@ -31,25 +31,29 @@ $(function () {
 
 
         let matchedZodiac = null;
+        let zodiacPlaylist_id = null;
         for (const zodiac of zodiacs) {
             if (
                 (month === zodiac.startMonth && day >= zodiac.startDay) ||
                 (month === zodiac.endMonth && day <= zodiac.endDay)
             ) {
                 matchedZodiac = zodiac.sign;
+                zodiacPlaylist_id = zodiac.playlist_id;
                 break;
             }
         }
 
         if (matchedZodiac) {
+            fetchPlaylist(zodiacPlaylist_id);
+            console.log(zodiacPlaylist_id);
             window.location.href = matchedZodiac.toLowerCase() + '.html';
-            fetchPlaylist(matchedZodiac.playlist_id);
         } else {
             window.location.href = 'homepage.html';
         }
     });
     const token = 'BQCtqUjjAhqopASdUD5lAd3q-5lJhWdTNnZXTdj40DBJnHcahZvKdDve_EaUEBVA3fLecwhiPr-t655vd0LMqw43jwd4baCTHCAvhGkLvhhQs6ewoi8KMdIlQSYc5jDzNgTYvS-l8EJIlFOZQAfivjG0dDfKbZIopCtn8Q5FzBWrmyl79DakBPe-mXrG0i_rUEe7Rc1H2a13z-IWBUZ64lnayKrHfn_4zxHr58L8SyK8pdqujHceWGdYGzGYtQUllTE-fMJxDeK8JBnk2CDCDDeN';
     function fetchPlaylist(playlistId) {
+        console.log('about to fetch data');
         $.ajax({
             url: 'https://api.spotify.com/v1/playlists/' + playlistId,
             type: 'GET',
@@ -57,10 +61,11 @@ $(function () {
                 'Authorization': `Bearer ${token}`
             },
             success: function(data) {
+                console.log('Playlist fetched successfully:', data);
                 displayPlaylist(data);
             },
             error: function(xhr, status, error) {
-                console.error('Error fetching playlist:', error);
+                console.error('Error fetching playlist:', error, xhr, status);
             }
         });
     }
