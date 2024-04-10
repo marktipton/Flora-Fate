@@ -10,6 +10,7 @@
   font-weight: normal;
 }
 
+
 header a img {
   width: 150px;
 }
@@ -36,6 +37,7 @@ body {
   width: 1440px;
   height: 1093px;
   margin: 0;
+  cursor: url('cursor.cur'), auto;
 }
 
 header {
