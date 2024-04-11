@@ -61,10 +61,16 @@ header {
 
 .logo {
   position: absolute;
-  width: 169px;
-  height: 30px;
+  width: 100px;
+  height: 100px;
   left: 30px;
   top: 35px;
+}
+
+.logo a {
+  z-index: 100;
+  width: inherit;
+  height: 100px;
 }
 
 .navigation {
