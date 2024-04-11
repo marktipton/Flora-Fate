@@ -22,6 +22,7 @@ $(function () {
         });
         console.log(userData);
 
+        $('.userSpan').text('name');
         const birthday = new Date(userData.birthday);
         console.log(birthday);
         const month = birthday.getMonth() + 1;
