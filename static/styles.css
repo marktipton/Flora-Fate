@@ -129,6 +129,17 @@ body {
   fill: transparent;
   width: 600px;
 }
+
+.bi-flower3 {
+  width: 40px;
+  height: 40px;
+  transition: transform 0.3s;
+}
+
+.bi-flower3:hover {
+  fill: mediumaquamarine;
+  transform: scale(1.1);
+}
 /* .text-container svg {
   margin-top: 50px;
 } */
