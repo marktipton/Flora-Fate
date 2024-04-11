@@ -10,51 +10,56 @@
         <script src="../../static/scripts.js"></script>
     </head>
     <body>
-        <div class="background-img">
-            <!---Header-->
-            <div class="box">
-                <header>
-                    <div class="logo">
-                        <a><img src="../../images/FF_favicon.svg" alt="logo"></a>
-                    </div>
-                    <div class="navigation">
-                        <div class="user">
-                        </div>
-                    </div>
+        <div class="background-img"></div>
+        <!---Header-->
+        <header>
+            <div class="logo">
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
+            </div>
+            <div class="navigation">
+                <div class="user">
                 </div>
-            </header>
-        </div>
+            </div>
+        </header>
 
         <!---Banner-->
         <main>
-            <section class="banner-content">
-                <div class="text-container">
-                    <h1>Aries</h1>
+            <section class="zodiac-content">
+                <div class="zodiac-container">
+                    <svg width="520" height="260">
+                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <text class="curvedText-zodiac" text-anchor="middle">
+                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                                Aries
+                            </textPath>
+                        </text>
+                    </svg>
                     <h2>Volcano</h2>
                 </div>
                 <div class="aries-photo"></div>
+                <p> hello test test test</p>
+                <hr>
                 <section class="cards">
                     <h1 class="cards-title">Explore your garden</h1>
                     <div class="cards-box">
                         <div class="card">
                             <img src="../../images/png" alt="flower">
                             <div class="card-text">
-                                <h2 class="card-names">flower name</h2>
+                                <h2 class="card-names">Pansy</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/png" alt="book">
+                            <img src="../../images/call_of_the_wild.jpg" alt="book" class="small-img">
                             <div class="card-text">
-                                <h2 class="card-names">Book name and
-                                    author</h2>
+                                <h2 class="card-names">Call of the Wild by Jack London</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
                             <img src="../../images/png" alt="movie">
                             <div class="card-text">
-                                <h2 class="card-names">movie name</h2>
+                                <h2 class="card-names">The Revenant</h2>
                                 <p>Description</p>
                             </div>
                         </div>
