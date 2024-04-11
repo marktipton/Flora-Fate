@@ -44,42 +44,42 @@ $(function () {
         }
 
         if (matchedZodiac) {
-            fetchPlaylist(zodiacPlaylist_id);
-            console.log(zodiacPlaylist_id);
+            // fetchPlaylist(zodiacPlaylist_id);
+            // console.log(zodiacPlaylist_id);
             window.location.href = matchedZodiac.toLowerCase() + '.html';
         } else {
             window.location.href = 'homepage.html';
         }
     });
-    const token = 'BQCtqUjjAhqopASdUD5lAd3q-5lJhWdTNnZXTdj40DBJnHcahZvKdDve_EaUEBVA3fLecwhiPr-t655vd0LMqw43jwd4baCTHCAvhGkLvhhQs6ewoi8KMdIlQSYc5jDzNgTYvS-l8EJIlFOZQAfivjG0dDfKbZIopCtn8Q5FzBWrmyl79DakBPe-mXrG0i_rUEe7Rc1H2a13z-IWBUZ64lnayKrHfn_4zxHr58L8SyK8pdqujHceWGdYGzGYtQUllTE-fMJxDeK8JBnk2CDCDDeN';
-    function fetchPlaylist(playlistId) {
-        console.log('about to fetch data');
-        $.ajax({
-            url: 'https://api.spotify.com/v1/playlists/' + playlistId,
-            type: 'GET',
-            headers: {
-                'Authorization': `Bearer ${token}`
-            },
-            success: function(data) {
-                console.log('Playlist fetched successfully:', data);
-                displayPlaylist(data);
-            },
-            error: function(xhr, status, error) {
-                console.error('Error fetching playlist:', error, xhr, status);
-            }
-        });
-    }
+    // const token = 'BQCtqUjjAhqopASdUD5lAd3q-5lJhWdTNnZXTdj40DBJnHcahZvKdDve_EaUEBVA3fLecwhiPr-t655vd0LMqw43jwd4baCTHCAvhGkLvhhQs6ewoi8KMdIlQSYc5jDzNgTYvS-l8EJIlFOZQAfivjG0dDfKbZIopCtn8Q5FzBWrmyl79DakBPe-mXrG0i_rUEe7Rc1H2a13z-IWBUZ64lnayKrHfn_4zxHr58L8SyK8pdqujHceWGdYGzGYtQUllTE-fMJxDeK8JBnk2CDCDDeN';
+    // function fetchPlaylist(playlistId) {
+    //     console.log('about to fetch data');
+    //     $.ajax({
+    //         url: 'https://api.spotify.com/v1/playlists/' + playlistId,
+    //         type: 'GET',
+    //         headers: {
+    //             'Authorization': `Bearer ${token}`
+    //         },
+    //         success: function(data) {
+    //             console.log('Playlist fetched successfully:', data);
+    //             displayPlaylist(data);
+    //         },
+    //         error: function(xhr, status, error) {
+    //             console.error('Error fetching playlist:', error, xhr, status);
+    //         }
+    //     });
+    // }
 
-    function displayPlaylist(playlistData) {
-        const tracks = playlistData.tracks.items;
-        const playlistContainer = $('#playlistContainer');
-        playlistContainer.empty();
+    // function displayPlaylist(playlistData) {
+    //     const tracks = playlistData.tracks.items;
+    //     const playlistContainer = $('#playlistContainer');
+    //     playlistContainer.empty();
 
-        const ul = $('<ul>');
-        tracks.forEach(function(track) {
-            const li = $('<li>').text(track.track.name);
-            ul.append(li);
-        });
-        playlistContainer.append(ul);
-    }
+    //     const ul = $('<ul>');
+    //     tracks.forEach(function(track) {
+    //         const li = $('<li>').text(track.track.name);
+    //         ul.append(li);
+    //     });
+    //     playlistContainer.append(ul);
+    // }
 });
