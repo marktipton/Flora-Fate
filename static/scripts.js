@@ -20,9 +20,9 @@ $(function () {
         $.each(formData, function(_, field) {
             userData[field.name] = field.value;
         });
-        console.log(userData);
-
-        $('.userSpan').text('name');
+        console.log(formData);
+        const name = userData.name;
+        console.log(name);
         const birthday = new Date(userData.birthday);
         console.log(birthday);
         const month = birthday.getMonth() + 1;
@@ -48,6 +48,7 @@ $(function () {
             // fetchPlaylist(zodiacPlaylist_id);
             // console.log(zodiacPlaylist_id);
             window.location.href = matchedZodiac.toLowerCase() + '.html';
+            $('.userSpan').text(name);
         } else {
             window.location.href = 'homepage.html';
         }
