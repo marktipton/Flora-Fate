@@ -161,7 +161,9 @@ body {
   justify-content: center;
   /* height: 850px; */
   width: 600px;
-  height: 1000px;
+  height: 900px;
+  margin-bottom: 100px;
+  /* margin-bottom: 400px; */
   /* margin-top: -20px; */
 }
 
@@ -216,6 +218,7 @@ body {
   align-items: center;
   width: auto;
   height: 400px;
+  background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -50px;
