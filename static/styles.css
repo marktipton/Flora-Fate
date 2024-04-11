@@ -46,7 +46,7 @@ body {
 
 header {
   display: flex;
-  width: 100%;
+  max-width: 100%;
   height: 1030px;
   margin-top: 35.02px;
 }
@@ -55,9 +55,11 @@ header {
   background-image: url("../images/frame.png");
   position: absolute;
   width: 100%;
-  height: 1500px;
+  /* height: 1500px; */
+  height: auto;
   left: 0;
   top: 0;
+  background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
   z-index: -1;
@@ -162,6 +164,7 @@ header {
   justify-content: center;
   /* height: 850px; */
   width: 600px;
+  height: 1200px;
   margin-top: -20px;
 }
 
