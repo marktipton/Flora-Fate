@@ -1,4 +1,11 @@
 $(function () {
+    function showLoader() {
+        $(".loader").show();
+        }
+
+        function hideLoader() {
+        $(".loader").hide();
+        }
     const zodiacs = [
         { sign: 'Aries', startMonth: 3, startDay: 21, endMonth: 4, endDay: 19 , playlist_id: '37i9dQZF1DX2DC3Q7JOmYe'},
         { sign: 'Taurus', startMonth: 4, startDay: 20, endMonth: 5, endDay: 20 , playlist_id: ''},
