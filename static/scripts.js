@@ -34,7 +34,7 @@ $(function () {
         console.log(birthday);
         const month = birthday.getMonth() + 1;
         console.log(month);
-        const day = birthday.getDate();
+        const day = birthday.getDate() + 1;
         console.log(day);
 
 
@@ -44,6 +44,8 @@ $(function () {
             if (
                 (month === zodiac.startMonth && day >= zodiac.startDay) ||
                 (month === zodiac.endMonth && day <= zodiac.endDay)
+                // (month === zodiac.endMonth && day === zodiac.startDay) ||
+                // (month === zodiac.startMonth && day === zodiac.endDay)
             ) {
                 matchedZodiac = zodiac.sign;
                 zodiacPlaylist_id = zodiac.playlist_id;
