@@ -174,8 +174,7 @@ body {
   width: 600px;
   height: 900px;
   margin-bottom: 100px;
-  /* margin-bottom: 400px; */
-  /* margin-top: -20px; */
+  margin-top: -20px;
 }
 
 .zodiac-container {
@@ -364,7 +363,7 @@ body {
 
 .small-img{
 width: 100%;
-height: auto;
+height: 175px;
 border-radius: 15px;
 background-color: #eeeeee;
 border: 3px solid #627042;
