@@ -20,9 +20,10 @@ $(function () {
         { sign: 'Aquarius', startMonth: 1, startDay: 20, endMonth: 2, endDay: 18 , playlist_id: ''},
         { sign: 'Pisces', startMonth: 2, startDay: 19, endMonth: 3, endDay: 20 , playlist_id: ''}
     ];
+    let name = '';
     $('#userInfoForm').submit(function (event) {
         event.preventDefault();
-        const name = $('#name').val();
+        name = $('#name').val();
         const formData = $(this).serializeArray();
         const userData = {};
         $.each(formData, function(_, field) {
@@ -50,13 +51,14 @@ $(function () {
             }
         }
 
-if (matchedZodiac) {
-    // Redirect to the loading page with the matchedZodiac as a URL parameter
-    window.location.href = `loading.html?zodiac=${matchedZodiac}`;
-} else {
-    window.location.href = 'homepage.html';
-}
+        if (matchedZodiac) {
+            // Redirect to the loading page with the matchedZodiac as a URL parameter
+            window.location.href = `loading.html?zodiac=${matchedZodiac}`;
+        } else {
+            window.location.href = 'homepage.html';
+        }
     });
+    console.log(name.name);
     // const token = 'BQCtqUjjAhqopASdUD5lAd3q-5lJhWdTNnZXTdj40DBJnHcahZvKdDve_EaUEBVA3fLecwhiPr-t655vd0LMqw43jwd4baCTHCAvhGkLvhhQs6ewoi8KMdIlQSYc5jDzNgTYvS-l8EJIlFOZQAfivjG0dDfKbZIopCtn8Q5FzBWrmyl79DakBPe-mXrG0i_rUEe7Rc1H2a13z-IWBUZ64lnayKrHfn_4zxHr58L8SyK8pdqujHceWGdYGzGYtQUllTE-fMJxDeK8JBnk2CDCDDeN';
     // function fetchPlaylist(playlistId) {
     //     console.log('about to fetch data');
