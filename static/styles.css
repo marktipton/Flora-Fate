@@ -39,10 +39,10 @@ main form {
 
 body {
   background-image: url("../images/frame.png");
-  position: relative;
+  position: absolute;
   width: 99%;
   /* height: 1500px; */
-  height: 175vh;
+  height: 173vh;
   left: 0;
   top: 0;
   background-position-x: center;
