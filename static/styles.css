@@ -40,9 +40,9 @@ main form {
 body {
   background-image: url("../images/frame.png");
   position: absolute;
-  width: 100%;
+  width: 99%;
   /* height: 1500px; */
-  height: auto;
+  height: 173vh;
   left: 0;
   top: 0;
   background-position-x: center;
@@ -50,6 +50,7 @@ body {
   background-size: cover;
   z-index: -1;
   cursor: url('cursor.cur'), auto;
+  /* margin-bottom: 100px; */
 }
 
 /* header {
@@ -137,7 +138,7 @@ body {
 }
 
 .bi-flower3:hover {
-  fill: #8696aa;
+  fill: #9aaf69;
   transform: scale(1.1);
 }
 /* .text-container svg {
@@ -198,6 +199,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -208,6 +210,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 .cancer-photo {
@@ -217,6 +220,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -228,6 +232,7 @@ body {
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -238,6 +243,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 .leo-photo {
@@ -247,6 +253,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -257,6 +264,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -267,6 +275,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -277,6 +286,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -287,6 +297,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -297,6 +308,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
@@ -307,6 +319,7 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
+  margin-left: 42px;
   margin-top: -50px;
 }
 
