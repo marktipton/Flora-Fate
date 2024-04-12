@@ -22,14 +22,13 @@ $(function () {
     ];
     $('#userInfoForm').submit(function (event) {
         event.preventDefault();
+        const name = $('#name').val();
         const formData = $(this).serializeArray();
         const userData = {};
         $.each(formData, function(_, field) {
             userData[field.name] = field.value;
         });
         console.log(formData);
-        const name = userData.name;
-        console.log(name);
         const birthday = new Date(userData.birthday);
         console.log(birthday);
         const month = birthday.getMonth() + 1;
@@ -54,10 +53,10 @@ $(function () {
         }
 
         if (matchedZodiac) {
-            // fetchPlaylist(zodiacPlaylist_id);
-            // console.log(zodiacPlaylist_id);
-            window.location.href = matchedZodiac.toLowerCase() + '.html';
-            $('.userSpan').text(name);
+            // Redirect to loading page after clicking submit
+            // After 2 seconds, redirect to the zodiac page
+            window.location.href = "loading.html";
+            // Create a promise that resolves after 2 seconds
         } else {
             window.location.href = 'homepage.html';
         }
