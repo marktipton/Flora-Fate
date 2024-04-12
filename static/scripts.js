@@ -43,8 +43,6 @@ $(function () {
             if (
                 (month === zodiac.startMonth && day >= zodiac.startDay) ||
                 (month === zodiac.endMonth && day <= zodiac.endDay)
-                // (month === zodiac.endMonth && day === zodiac.startDay) ||
-                // (month === zodiac.startMonth && day === zodiac.endDay)
             ) {
                 matchedZodiac = zodiac.sign;
                 zodiacPlaylist_id = zodiac.playlist_id;
@@ -52,14 +50,12 @@ $(function () {
             }
         }
 
-        if (matchedZodiac) {
-            // Redirect to loading page after clicking submit
-            // After 2 seconds, redirect to the zodiac page
-            window.location.href = "loading.html";
-            // Create a promise that resolves after 2 seconds
-        } else {
-            window.location.href = 'homepage.html';
-        }
+if (matchedZodiac) {
+    // Redirect to the loading page with the matchedZodiac as a URL parameter
+    window.location.href = `loading.html?zodiac=${matchedZodiac}`;
+} else {
+    window.location.href = 'homepage.html';
+}
     });
     // const token = 'BQCtqUjjAhqopASdUD5lAd3q-5lJhWdTNnZXTdj40DBJnHcahZvKdDve_EaUEBVA3fLecwhiPr-t655vd0LMqw43jwd4baCTHCAvhGkLvhhQs6ewoi8KMdIlQSYc5jDzNgTYvS-l8EJIlFOZQAfivjG0dDfKbZIopCtn8Q5FzBWrmyl79DakBPe-mXrG0i_rUEe7Rc1H2a13z-IWBUZ64lnayKrHfn_4zxHr58L8SyK8pdqujHceWGdYGzGYtQUllTE-fMJxDeK8JBnk2CDCDDeN';
     // function fetchPlaylist(playlistId) {
