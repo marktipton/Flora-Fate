@@ -39,10 +39,10 @@ main form {
 
 body {
   background-image: url("../images/frame.png");
-  position: absolute;
-  width: 100%;
+  position: relative;
+  width: 99%;
   /* height: 1500px; */
-  height: auto;
+  height: 175vh;
   left: 0;
   top: 0;
   background-position-x: center;
@@ -50,6 +50,7 @@ body {
   background-size: cover;
   z-index: -1;
   cursor: url('cursor.cur'), auto;
+  /* margin-bottom: 100px; */
 }
 
 /* header {
