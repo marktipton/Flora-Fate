@@ -53,16 +53,6 @@ body {
   /* margin-bottom: 100px; */
 }
 
-.loader {
-  border: 10px solid #f3f3f3;
-  border-top: 10px solid #C271FF;
-  border-radius: 50%;
-  width: 80px;
-  height: 80px;
-  animation: spin 2s linear infinite;
-  margin: auto;
-}
-
 /* header {
   display: flex;
   max-width: 100%;
@@ -163,8 +153,6 @@ body {
   padding-bottom: 10px;
 } */
 .text-container img {
-  width: 500px;
-  height: 500px;
   margin-top: -35px;
 }
 
