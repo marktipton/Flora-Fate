@@ -347,7 +347,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  justify-content: start;
+  /* justify-content: start; */
   color: var(--black-color);
   margin-bottom: 50px;
 }
@@ -367,7 +367,7 @@ body {
   justify-content: space-around;
   flex-wrap: wrap;
   /* margin-top: 5%; */
-  height: 100px;
+  height: auto;
   width: 90%;
   margin-left: auto;
   margin-right: auto;
@@ -382,13 +382,12 @@ body {
   align-items: center;
   text-align: center;
   justify-content: space-between;
-  gap: 40px;
-  width: 200px;
+  /* width: 200px; */
 }
 
 .small-img{
-width: 100%;
-height: 175px;
+width: 200px;
+height: 200px;
 border-radius: 15px;
 background-color: #eeeeee;
 border: 3px solid #627042;
