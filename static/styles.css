@@ -40,9 +40,8 @@ main form {
 body {
   background-image: url("../images/frame.png");
   position: absolute;
-  width: 99%;
-  /* height: 1500px; */
-  height: 173vh;
+  max-width: 100%;
+  height: auto;
   left: 0;
   top: 0;
   background-position-x: center;
@@ -50,7 +49,6 @@ body {
   background-size: cover;
   z-index: -1;
   cursor: url('cursor.cur'), auto;
-  /* margin-bottom: 100px; */
 }
 
 /* header {
@@ -232,8 +230,6 @@ body {
   height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
 }
 
 .capricorn-photo {
@@ -373,18 +369,6 @@ body {
   margin-right: auto;
 }
 
-.card {
-  flex-basis: 20%;
-  /* margin-top: 50px; */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: space-between;
-  /* width: 200px; */
-}
-
 .small-img{
 width: 200px;
 height: 200px;
@@ -418,3 +402,10 @@ margin-bottom: 10px;
   width: 100px;
   height: 100px;
 } */
+
+/* Adjust height for smaller screens */
+@media (max-width: 1330px) {
+  .cancer-photo {
+    height: 300px; /* Adjust height for tablets and smaller devices */
+  }
+}
