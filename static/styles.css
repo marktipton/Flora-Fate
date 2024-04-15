@@ -200,6 +200,10 @@ body {
   margin-top: -35px;
 }
 
+.main-zodiac-content {
+  display: flex;
+}
+
 .aquarius-photo {
   background-image: url(../images/aquarius.png);
   align-items: center;
