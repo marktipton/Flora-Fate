@@ -20,9 +20,10 @@ $(function () {
         { sign: 'Aquarius', startMonth: 1, startDay: 20, endMonth: 2, endDay: 18 , playlist_id: ''},
         { sign: 'Pisces', startMonth: 2, startDay: 19, endMonth: 3, endDay: 20 , playlist_id: ''}
     ];
+    let name = '';
     $('#userInfoForm').submit(function (event) {
         event.preventDefault();
-        const name = $('#name').val();
+        name = $('#name').val();
         const formData = $(this).serializeArray();
         const userData = {};
         $.each(formData, function(_, field) {
@@ -50,12 +51,12 @@ $(function () {
             }
         }
 
-if (matchedZodiac) {
-    // Redirect to the loading page with the matchedZodiac as a URL parameter
-    window.location.href = `loading.html?zodiac=${matchedZodiac}`;
-} else {
-    window.location.href = 'homepage.html';
-}
+        if (matchedZodiac) {
+            // Redirect to the loading page with the matchedZodiac as a URL parameter
+            window.location.href = `loading.html?zodiac=${matchedZodiac}`;
+        } else {
+            window.location.href = 'homepage.html';
+        }
     });
 
 });
