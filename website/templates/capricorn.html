@@ -115,9 +115,21 @@
             <footer>
             </footer>
             <script>
-            var userName = localStorage.getItem('userName');
-            $(document).ready(function() {
-            $('.welcome-message').text(userName);
+                $(document).ready(function(){
+                    $('.cards-carousel .cards-box').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: false,
+                        autoplaySpeed: 2000,
+                        dots: true,
+                        arrows: true
+                    });
+                });
+            </script>
+            <script>
+                var userName = localStorage.getItem('userName');
+                $(document).ready(function() {
+                $('.welcome-message').text(userName);
             });
             </script>
         </body>

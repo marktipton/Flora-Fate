@@ -93,41 +93,29 @@
                                 <p>Description</p>
                             </div>
                         </div>
-<<<<<<< HEAD
-                        <div class="card">
-                            <img src="../../images/aries_playlist.png"
-                                alt="playlist" class="small-img">
-                            <div class="card-text">
-                                <h2 class="card-names">Playlist name</h2>
-                                <p>Description</p>
-                            </div>
-                        </div>
-=======
->>>>>>> 49908b15aaef72f81834718bfc5dcaffae0c6891
                     </div>
                 </section>
             </main>
             <!---Footer--->
             <footer>
             </footer>
-<<<<<<< HEAD
             <script>
-            var userName = localStorage.getItem('userName');
-            $(document).ready(function() {
-            $('.welcome-message').text(userName);
-            });
+                $(document).ready(function(){
+                    $('.cards-carousel .cards-box').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: false,
+                        autoplaySpeed: 2000,
+                        dots: true,
+                        arrows: true
+                    });
+                });
             </script>
-=======
-            <!-- <script src="https://open.spotify.com/embed/iframe-api/v1" async>
-                window.onSpotifyIframeApiReady = (IFrameAPI) => {
-                const element = document.getElementById('embed-iframe');
-                const options = {
-                    uri: 'spotify:playlist:37i9dQZF1DXaeX3MJpiD4U'
-                    };
-                const callback = (EmbedController) => {};
-                IFrameAPI.createController(element, options, callback);
-                };
-            </script> -->
->>>>>>> 49908b15aaef72f81834718bfc5dcaffae0c6891
+            <script>
+                var userName = localStorage.getItem('userName');
+                $(document).ready(function() {
+                $('.welcome-message').text(userName);
+                });
+            </script>
         </body>
     </html>
