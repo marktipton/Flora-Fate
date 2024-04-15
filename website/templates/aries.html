@@ -14,7 +14,8 @@
         <!---Header-->
         <header>
             <div class="logo">
-                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg"
+                        alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
@@ -27,34 +28,44 @@
             <section class="zodiac-content">
                 <div class="zodiac-container">
                     <svg width="520" height="260">
-                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <path id="curve"
+                            d="M 0 240 C 0 240, 260 0, 520 240"></path>
                         <text class="curvedText-zodiac" text-anchor="middle">
-                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                            <textpath class="curvedTextPath" href="#curve"
+                                startOffset="50%">
                                 Aries
-                            </textPath>
+                            </textpath>
                         </text>
                     </svg>
                     <h2>Fiery Volcano</h2>
                 </div>
                 <div class="main-zodiac-content">
                     <div class="aries-photo"></div>
-                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2DC3Q7JOmYe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>                </div>
-                    <p>Welcome to your garden, name. Aries, being a fire sign, resonates with the dynamic and passionate energy of the volcano. The passionflowers symbolize their intense drive and zest for life.</p>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2DC3Q7JOmYe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <p>Welcome to your garden, <span
+                    class="welcome-message"></span>. Aries, being a fire
+                    sign, resonates with the dynamic and passionate energy of
+                    the volcano. The passionflowers symbolize their intense
+                    drive and zest for life.</p>
                 <hr>
                 <section class="cards">
                     <h1 class="cards-title">Explore your garden</h1>
                     <div class="cards-box">
                         <div class="card">
-                            <img src="../../images/passionflower.png" alt="flower" class="small-img">
+                            <img src="../../images/passionflower.png"
+                                alt="flower" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Passionflower</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/call_of_the_wild.jpg" alt="book" class="small-img">
+                            <img src="../../images/call_of_the_wild.jpg"
+                                alt="book" class="small-img">
                             <div class="card-text">
-                                <h2 class="card-names">Call of the Wild by Jack London</h2>
+                                <h2 class="card-names">Call of the Wild by Jack
+                                    London</h2>
                                 <p>Description</p>
                             </div>
                         </div>
@@ -65,12 +76,31 @@
                                 <p>Description</p>
                             </div>
                         </div>
+<<<<<<< HEAD
+                        <div class="card">
+                            <img src="../../images/aries_playlist.png"
+                                alt="playlist" class="small-img">
+                            <div class="card-text">
+                                <h2 class="card-names">Playlist name</h2>
+                                <p>Description</p>
+                            </div>
+                        </div>
+=======
+>>>>>>> 49908b15aaef72f81834718bfc5dcaffae0c6891
                     </div>
                 </section>
             </main>
             <!---Footer--->
             <footer>
             </footer>
+<<<<<<< HEAD
+            <script>
+            var userName = localStorage.getItem('userName');
+            $(document).ready(function() {
+            $('.welcome-message').text(userName);
+            });
+            </script>
+=======
             <!-- <script src="https://open.spotify.com/embed/iframe-api/v1" async>
                 window.onSpotifyIframeApiReady = (IFrameAPI) => {
                 const element = document.getElementById('embed-iframe');
@@ -81,5 +111,6 @@
                 IFrameAPI.createController(element, options, callback);
                 };
             </script> -->
+>>>>>>> 49908b15aaef72f81834718bfc5dcaffae0c6891
         </body>
     </html>

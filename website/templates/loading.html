@@ -51,21 +51,24 @@
         <footer>
         </footer>
         <script>
-            // Function to get URL parameter value by name
-            function getUrlParameter(name) {
-                name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
-                var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
-                var results = regex.exec(location.search);
-                return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
-            };
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        };
 
-            // Get the matchedZodiac value from URL parameter
-            var matchedZodiac = getUrlParameter('zodiac');
+        var matchedZodiac = getUrlParameter('zodiac');
 
-            setTimeout(function() {
-                // Redirect to the zodiac page based on the matchedZodiac value
-                window.location.href = matchedZodiac.toLowerCase() + '.html';
-            }, 2500);
+        var userName = localStorage.getItem('userName');
+
+        setTimeout(function() {
+            window.location.href = matchedZodiac.toLowerCase() + '.html';
+        }, 2500);
+        $(document).ready(function() {
+            $('.welcome-message').text('Welcome to your garden, ' + userName + '.');
+        });
+
         </script>
     </body>
 
