@@ -141,6 +141,14 @@ body {
   fill: #9aaf69;
   transform: scale(1.1);
 }
+
+.text-container .loader {
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* .text-container svg {
   margin-top: 50px;
 } */
@@ -402,3 +410,8 @@ margin-bottom: 10px;
   font-family: 'Zaloga';
   font-size: 12px;
 }
+
+/* #embed-iframe {
+  width: 100px;
+  height: 100px;
+} */
