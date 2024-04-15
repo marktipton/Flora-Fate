@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="../../static/styles.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../../static/scripts.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+        <!-- Include Slick theme CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
     </head>
     <body>
         <div class="background-img"></div>
@@ -36,11 +40,14 @@
                     </svg>
                     <h2>Soothing Seaside</h2>
                 </div>
-                <div class="cancer-photo"></div>
+                <div class="main-zodiac-content">
+                    <div class="cancer-photo"></div>
+                    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DXaeX3MJpiD4U?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
                 <p>Welcome to your garden, name. Cancer, a water sign, reflects on their emotional depth and connection to water in this setting, while the hydrangeas symbolize their caring and compassionate nature.</p>
                 <hr>
-                <section class="cards">
-                    <h1 class="cards-title">Explore your garden</h1>
+                <h1 class="cards-title">Explore your garden</h1>
+                <section class="cards-carousel">
                     <div class="cards-box">
                         <div class="card">
                             <img src="../../images/hydrangea.png" alt="flower" class="small-img">
@@ -63,17 +70,16 @@
                                 <p>Description</p>
                             </div>
                         </div>
-                        <div class="card">
+                        <!-- <div class="card">
                             <div id="embed-iframe"></div>
-                            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXaeX3MJpiD4U?utm_source=generator"></iframe>
-                        </div>
+                        </div> -->
                     </div>
                 </section>
             </main>
             <!---Footer--->
             <footer>
             </footer>
-            <script src="https://open.spotify.com/embed/iframe-api/v1" async>
+            <!-- <script src="https://open.spotify.com/embed/iframe-api/v1" async>
                 window.onSpotifyIframeApiReady = (IFrameAPI) => {
                 const element = document.getElementById('embed-iframe');
                 const options = {
@@ -82,6 +88,18 @@
                 const callback = (EmbedController) => {};
                 IFrameAPI.createController(element, options, callback);
                 };
+            </script> -->
+            <script>
+                $(document).ready(function(){
+                    $('.cards-carousel .cards-box').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 2000,
+                        dots: true,
+                        arrows: true
+                    });
+                });
             </script>
         </body>
 
