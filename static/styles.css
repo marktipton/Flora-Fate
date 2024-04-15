@@ -404,25 +404,37 @@ margin-bottom: 10px;
   height: 100px;
 } */
 
-/* Adjust height for smaller screens */
+
+/* Media Queries */
 @media (max-width: 1330px) {
-  .cancer-photo {
+  .aries-photo,
+  .taurus-photo,
+  .gemini-photo,
+  .cancer-photo,
+  .leo-photo,
+  .virgo-photo,
+  .libra-photo,
+  .scorpio-photo,
+  .sagittarius-photo,
+  .capricorn-photo,
+  .aquarius-photo,
+  .pisces-photo {
     height: 300px; /* Adjust height for tablets and smaller devices */
   }
-}
 
-@media (max-width: 1330px) {
-
+  body {
+    background-size: cover;
+  }
 }
 
 @media screen and (max-width: 1000px) {
   body {
-    background-size: auto 100%;
+    background-image: cover;
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    background-size: auto auto;
+    background-image: contain;
   }
 }
