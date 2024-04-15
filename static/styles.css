@@ -406,7 +406,7 @@ margin-bottom: 10px;
 
 
 /* Media Queries */
-@media (max-width: 1330px) {
+@media (min-width: 1025px) {
   .aries-photo,
   .taurus-photo,
   .gemini-photo,
@@ -427,14 +427,16 @@ margin-bottom: 10px;
   }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
   body {
+    background-image: url("../images/tablet_bkg.png");
     background-image: cover;
   }
 }
 
 @media screen and (max-width: 600px) {
   body {
-    background-image: contain;
+    background-color: #fae6d4 !important; /* Set background color */
+    background-image: none; /* Remove any background image */
   }
 }
