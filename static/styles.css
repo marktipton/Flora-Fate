@@ -370,8 +370,8 @@ body {
 }
 
 .small-img{
-width: 200px;
-height: 200px;
+width: auto;
+height: 250px;
 border-radius: 15px;
 background-color: #eeeeee;
 border: 3px solid #627042;
