@@ -64,11 +64,8 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/cancer_playlist.png" alt="playlist" class="small-img">
-                            <div class="card-text">
-                                <h2 class="card-names">Playlist name</h2>
-                                <p>Description</p>
-                            </div>
+                            <div id="embed-iframe"></div>
+                            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DXaeX3MJpiD4U?utm_source=generator"></iframe>
                         </div>
                     </div>
                 </section>
@@ -76,6 +73,16 @@
             <!---Footer--->
             <footer>
             </footer>
+            <script src="https://open.spotify.com/embed/iframe-api/v1" async>
+                window.onSpotifyIframeApiReady = (IFrameAPI) => {
+                const element = document.getElementById('embed-iframe');
+                const options = {
+                    uri: 'spotify:playlist:37i9dQZF1DXaeX3MJpiD4U'
+                    };
+                const callback = (EmbedController) => {};
+                IFrameAPI.createController(element, options, callback);
+                };
+            </script>
         </body>
 
     </html>
