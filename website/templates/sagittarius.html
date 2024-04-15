@@ -14,7 +14,8 @@
         <!---Header-->
         <header>
             <div class="logo">
-                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg"
+                        alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
@@ -27,44 +28,54 @@
             <section class="zodiac-content">
                 <div class="zodiac-container">
                     <svg width="520" height="260">
-                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <path id="curve"
+                            d="M 0 240 C 0 240, 260 0, 520 240"></path>
                         <text class="curvedText-zodiac" text-anchor="middle">
-                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                            <textpath class="curvedTextPath" href="#curve"
+                                startOffset="50%">
                                 Sagittarius
-                            </textPath>
+                            </textpath>
                         </text>
                     </svg>
                     <h2>Flourishing Tropical Island</h2>
                 </div>
                 <div class="sagittarius-photo"></div>
-                <p>Welcome to your garden, name. Sagittarius, a fire sign, is inspired by the exotic and adventurous nature of the island. The birds of paradise flowers symbolize their optimistic and free-spirited personality</p>
+                <p>Welcome to your garden, <span
+                    class="welcome-message"></span>. Sagittarius, a fire
+                    sign, is inspired by the exotic and adventurous nature of
+                    the island. The birds of paradise flowers symbolize their
+                    optimistic and free-spirited personality</p>
                 <hr>
                 <section class="cards">
                     <h1 class="cards-title">Explore your garden</h1>
                     <div class="cards-box">
                         <div class="card">
-                            <img src="../../images/bird_of_paradise.png" alt="flower" class="small-img">
+                            <img src="../../images/bird_of_paradise.png"
+                                alt="flower" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Bird of Paradise</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/Treasure-Island.jpg" alt="book" class="small-img">
+                            <img src="../../images/Treasure-Island.jpg"
+                                alt="book" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Treasure Island</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/lilo_and_stitch.jpg" alt="movie" class="small-img">
+                            <img src="../../images/lilo_and_stitch.jpg"
+                                alt="movie" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Lilo and Stitch</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/sag_playlist.png" alt="playlist" class="small-img">
+                            <img src="../../images/sag_playlist.png"
+                                alt="playlist" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Playlist name</h2>
                                 <p>Description</p>
@@ -76,6 +87,12 @@
             <!---Footer--->
             <footer>
             </footer>
+            <script>
+                var userName = localStorage.getItem('userName');
+                $(document).ready(function() {
+                $('.welcome-message').text(userName);
+                });
+                </script>
         </body>
 
     </html>

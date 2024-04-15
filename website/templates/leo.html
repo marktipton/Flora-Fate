@@ -14,7 +14,8 @@
         <!---Header-->
         <header>
             <div class="logo">
-                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg"
+                        alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
@@ -27,47 +28,59 @@
             <section class="zodiac-content">
                 <div class="zodiac-container">
                     <svg width="520" height="260">
-                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <path id="curve"
+                            d="M 0 240 C 0 240, 260 0, 520 240"></path>
                         <text class="curvedText-zodiac" text-anchor="middle">
-                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                            <textpath class="curvedTextPath" href="#curve"
+                                startOffset="50%">
                                 Leo
-                            </textPath>
+                            </textpath>
                         </text>
                     </svg>
                     <h2>Sun-drenched Savanna</h2>
                 </div>
                 <div class="leo-photo"></div>
-                <p>Welcome to your garden, name. Leo, a fire sign ruled by the sun, thrives in the energy of this vibrant and sunny landscape. The sunflowers symbolize their confidence and radiance.</p>
+                <p>Welcome to your garden, <span
+                    class="welcome-message"></span>. Leo, a fire sign ruled
+                    by the sun, thrives in the energy of this vibrant and sunny
+                    landscape. The sunflowers symbolize their confidence and
+                    radiance.</p>
                 <hr>
                 <section class="cards">
                     <h1 class="cards-title">Explore your garden</h1>
                     <div class="cards-box">
                         <div class="card">
-                            <img src="../../images/sunflower.png" alt="flower" class="small-img">
+                            <img src="../../images/sunflower.png" alt="flower"
+                                class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Sunflower</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/call_of_the_wild.jpg" alt="book" class="small-img">
+                            <img src="../../images/call_of_the_wild.jpg"
+                                alt="book" class="small-img">
                             <div class="card-text">
-                                <h2 class="card-names">Call of the Wild by Jack London</h2>
+                                <h2 class="card-names">Call of the Wild by Jack
+                                    London</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/lion_king.jpg" alt="movie" class="small-img">
+                            <img src="../../images/lion_king.jpg" alt="movie"
+                                class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">The Lion King</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/leo_playlist.png" alt="playlist" class="small-img">
+                            <img src="../../images/leo_playlist.png"
+                                alt="playlist" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Playlist name</h2>
-                                <p>Confident and ambitious, here are tracks for Leo</p>
+                                <p>Confident and ambitious, here are tracks for
+                                    Leo</p>
                             </div>
                         </div>
                     </div>
@@ -76,6 +89,12 @@
             <!---Footer--->
             <footer>
             </footer>
+            <script>
+                var userName = localStorage.getItem('userName');
+                $(document).ready(function() {
+                $('.welcome-message').text(userName);
+                });
+                </script>
         </body>
 
     </html>

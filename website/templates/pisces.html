@@ -14,7 +14,8 @@
         <!---Header-->
         <header>
             <div class="logo">
-                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg"
+                        alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
@@ -27,30 +28,38 @@
             <section class="zodiac-content">
                 <div class="zodiac-container">
                     <svg width="520" height="260">
-                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <path id="curve"
+                            d="M 0 240 C 0 240, 260 0, 520 240"></path>
                         <text class="curvedText-zodiac" text-anchor="middle">
-                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                            <textpath class="curvedTextPath" href="#curve"
+                                startOffset="50%">
                                 Pisces
-                            </textPath>
+                            </textpath>
                         </text>
                     </svg>
                     <h2>Ethereal Twinkling Pond</h2>
                 </div>
                 <div class="pisces-photo"></div>
-                <p>Welcome to your garden, <span class="userSpan"></span>. Pisces, a water sign, finds inspiration and tranquility in this watery landscape. The water lily symbolizes their dreamy and ethereal nature.</p>
+                <p>Welcome to your garden, <span
+                        class="welcome-message"></span>. Pisces, a water sign,
+                    finds inspiration and tranquility in
+                    this watery landscape. The water lily symbolizes their
+                    dreamy and ethereal nature.</p>
                 <hr>
                 <section class="cards">
                     <h1 class="cards-title">Explore your garden</h1>
                     <div class="cards-box">
                         <div class="card">
-                            <img src="../../images/water_lily.png" alt="flower" class="small-img">
+                            <img src="../../images/water_lily.png" alt="flower"
+                                class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Water Lily</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/secret_garden.jpg" alt="book" class="small-img">
+                            <img src="../../images/secret_garden.jpg" alt="book"
+                                class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">The Secret Garden</h2>
                                 <p>Description</p>
@@ -64,10 +73,12 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/pisces_playlist.png" alt="playlist" class="small-img">
+                            <img src="../../images/pisces_playlist.png"
+                                alt="playlist" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Pisces</h2>
-                                <p>Known for their compassion and creativity, here are tracks for pisces </p>
+                                <p>Known for their compassion and creativity,
+                                    here are tracks for pisces </p>
                             </div>
                         </div>
                     </div>
@@ -76,6 +87,12 @@
             <!---Footer--->
             <footer>
             </footer>
+            <script>
+                var userName = localStorage.getItem('userName');
+                $(document).ready(function() {
+                $('.welcome-message').text(userName);
+                });
+                </script>
         </body>
 
     </html>

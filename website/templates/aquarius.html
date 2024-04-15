@@ -8,13 +8,15 @@
         <link rel="stylesheet" href="../../static/styles.css" />
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script src="../../static/scripts.js"></script>
+        <script src="../../static/aquarius.js"></script>
     </head>
     <body>
         <div class="background-img"></div>
         <!---Header-->
         <header>
             <div class="logo">
-                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg"
+                        alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
@@ -27,17 +29,24 @@
             <section class="zodiac-content">
                 <div class="zodiac-container">
                     <svg width="520" height="260">
-                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <path id="curve"
+                            d="M 0 240 C 0 240, 260 0, 520 240"></path>
                         <text class="curvedText-zodiac" text-anchor="middle">
-                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                            <textpath class="curvedTextPath" href="#curve"
+                                startOffset="50%">
                                 Aquarius
-                            </textPath>
+                            </textpath>
                         </text>
                     </svg>
                     <h2>Lush Mystical Rainforest</h2>
                 </div>
                 <div class="aquarius-photo"></div>
-                <p>Welcome to your garden, name. Aquarius, an air sign, with a visionary and original spirit, is drawn to the mystical and biodiverse environment of the rainforest. The orchids symbolize their unique and creative approach to life.</p>
+                <p>Welcome to your garden, <span
+                        class="welcome-message"></span>. Aquarius, an air sign,
+                    with a visionary and original spirit, is drawn to the
+                    mystical and biodiverse environment of the rainforest. The
+                    orchids symbolize their unique and creative approach to
+                    life.</p>
                 <hr>
                 <section class="cards">
                     <h1 class="cards-title">Explore your garden</h1>
@@ -50,21 +59,25 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/100-years.jpg" alt="book" class="small-img">
+                            <img src="../../images/100-years.jpg" alt="book"
+                                class="small-img">
                             <div class="card-text">
-                                <h2 class="card-names">100 Years of Solitude</h2>
+                                <h2 class="card-names">100 Years of
+                                    Solitude</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/avatar.jpg" alt="movie" class="small-img">
+                            <img src="../../images/avatar.jpg" alt="movie"
+                                class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Avatar</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/aqua_playlist.png" alt="playlist" class="small-img">
+                            <img src="../../images/aqua_playlist.png"
+                                alt="playlist" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Aquarius</h2>
                                 <p>Description</p>
@@ -76,6 +89,12 @@
             <!---Footer--->
             <footer>
             </footer>
+            <script>
+                var userName = localStorage.getItem('userName');
+                $(document).ready(function() {
+                $('.welcome-message').text(userName);
+                });
+                </script>
         </body>
 
     </html>
