@@ -14,7 +14,8 @@
         <!---Header-->
         <header>
             <div class="logo">
-                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg"
+                        alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
@@ -27,11 +28,13 @@
             <section class="zodiac-content">
                 <div class="zodiac-container">
                     <svg width="520" height="260">
-                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <path id="curve"
+                            d="M 0 240 C 0 240, 260 0, 520 240"></path>
                         <text class="curvedText-zodiac" text-anchor="middle">
-                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
+                            <textpath class="curvedTextPath" href="#curve"
+                                startOffset="50%">
                                 Virgo
-                            </textPath>
+                            </textpath>
                         </text>
                     </svg>
                     <h2>Orderly Vibrant Garden</h2>
@@ -40,37 +43,47 @@
                     <div class="virgo-photo"></div>
                     <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX6PdsVYbP4rI?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
                 </div>
-                <p>Welcome to garden, name. Virgo, an earth sign, finds peace and fulfillment in the precision of the garden. The chrysanthemums symbolize their meticulous nature and desire for elegance and refinement.</p>
+                <p>Welcome to your garden, <span
+                        class="welcome-message"></span>. Virgo, an earth sign,
+                    finds peace and fulfillment in the precision of the garden.
+                    The chrysanthemums symbolize their meticulous nature and
+                    desire for elegance and refinement.</p>
                 <hr>
                 <section class="cards">
                     <h1 class="cards-title">Explore your garden</h1>
                     <div class="cards-box">
                         <div class="card">
-                            <img src="../../images/chrysanthemum.png" alt="flower" class="small-img">
+                            <img src="../../images/chrysanthemum.png"
+                                alt="flower" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Chrysanthemum</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/lang_of_flowers.png" alt="book" class="small-img">
+                            <img src="../../images/lang_of_flowers.png"
+                                alt="book" class="small-img">
                             <div class="card-text">
-                                <h2 class="card-names">The Language of the Flowers</h2>
+                                <h2 class="card-names">The Language of the
+                                    Flowers</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/pride_and_pred.jpg" alt="movie" class="small-img">
+                            <img src="../../images/pride_and_pred.jpg"
+                                alt="movie" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Pride and Prejudice</h2>
                                 <p>Description</p>
                             </div>
                         </div>
                         <div class="card">
-                            <img src="../../images/virgo_playlist.png" alt="playlist" class="small-img">
+                            <img src="../../images/virgo_playlist.png"
+                                alt="playlist" class="small-img">
                             <div class="card-text">
                                 <h2 class="card-names">Playlist name</h2>
-                                <p>Logical and reliable, here are tracks for Virgo</p>
+                                <p>Logical and reliable, here are tracks for
+                                    Virgo</p>
                             </div>
                         </div>
                     </div>
@@ -79,6 +92,12 @@
             <!---Footer--->
             <footer>
             </footer>
+            <script>
+                var userName = localStorage.getItem('userName');
+                $(document).ready(function() {
+                $('.welcome-message').text(userName);
+                });
+                </script>
         </body>
 
     </html>
