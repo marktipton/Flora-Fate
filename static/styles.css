@@ -470,7 +470,7 @@ margin-bottom: 10px;
   }
 } */
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 575px) {
   .homepage,
   .zodiac-page {
     background-image: none !important;
@@ -493,10 +493,48 @@ margin-bottom: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 60px;
+    margin-top: 200px;
+    text-align: center;
+    padding-right: 140px !important;
   }
-  .main-zodiac-content {
+
+  /* .main-zodiac-content {
     flex-direction: column;
     align-items: center;
+  } */
+  .main-zodiac-content {
+    height: 500px !important;
+  }
+
+  main section {
+    margin-left: 50px;
+  }
+
+  .aries-photo,
+  .taurus-photo,
+  .gemini-photo,
+  .cancer-photo,
+  .leo-photo,
+  .virgo-photo,
+  .libra-photo,
+  .scorpio-photo,
+  .sagittarius-photo,
+  .capricorn-photo,
+  .aquarius-photo,
+  .pisces-photo {
+    padding-right: 70px;
+    margin-left: 20px;
+  }
+  .cards-box {
+    margin-right: 130px;
+  }
+  h1 {
+    padding-left: 60px;
+  }
+  .spotify-player {
+    margin-right: 50px;
+  }
+  .zodiac-arc {
+    margin-left: 50px;
   }
 }
