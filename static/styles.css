@@ -224,7 +224,7 @@ main form {
   background-image: url(../images/aquarius.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -235,7 +235,7 @@ main form {
   background-image: url(../images/aries.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -245,7 +245,7 @@ main form {
   background-image: url(../images/cancer.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -254,7 +254,7 @@ main form {
   background-image: url(../images/capricorn.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -266,7 +266,7 @@ main form {
   background-image: url(../images/gemini.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -276,7 +276,7 @@ main form {
   background-image: url(../images/leo.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -287,7 +287,7 @@ main form {
   background-image: url(../images/libra.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -298,7 +298,7 @@ main form {
   background-image: url(../images/pisces.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -309,7 +309,7 @@ main form {
   background-image: url(../images/sagittarius.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -320,7 +320,7 @@ main form {
   background-image: url(../images/scorpio.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -331,7 +331,7 @@ main form {
   background-image: url(../images/taurus.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -342,7 +342,7 @@ main form {
   background-image: url(../images/virgo.png);
   align-items: center;
   width: auto;
-  height: 400px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   margin-left: 42px;
@@ -437,51 +437,33 @@ margin-bottom: 10px;
   .aquarius-photo,
   .pisces-photo {
     height: 200px;
-    flex-direction: column;
-    align-items: center;
   }
-    /* .embed-responsive {
-      height: 200px;
-    } */
-
-    /* .cards-box {
-      height: 200px;
-    } */
 }
-
-
   @media screen and (min-width: 600px) and (max-width: 1025px) {
-    .homepage,
-    .main-zodiac-content {
-      flex-direction: column;
-      align-items: center;
-      background-image: url("../images/tablet_bkg.png");
-      background-size: cover;
-    }
-  }
 
-@media screen and (max-width: 900px) {
-  .homepage {
-    flex-direction: column;
-    align-items: center;
-    background-image: none !important;
+  .homepage,
+  .zodiac-page {
     background-image: url("../images/tablet_bkg.png");
     background-size: cover;
   }
 }
+/*
+@media screen and (max-width: 900px) {
+  .homepage {
+    background-image: none;
+    background-image: url("../images/tablet_bkg.png");
+    background-size: cover;
+  }
+} */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 599px) {
   .homepage,
-  .main-zodiac-content {
+  .zodiac-page {
     background-image: none !important;
     background-color: #fae6d4 !important; /* Set background color */
     background-size: cover; /* Remove any background image */
   }
   .text-container {
     margin-left: 60px;
-  }
-  .cards-carousel .cards-box {
-    display: flex;
-    flex-direction: column;
   }
 }
