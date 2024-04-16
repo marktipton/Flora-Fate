@@ -37,9 +37,8 @@ main form {
   align-items: center;
 }
 
-body {
+.homepage {
   background-image: url("../images/frame.png");
-  position: absolute;
   max-width: 99%;
   height: 100%;
   left: 0;
@@ -52,6 +51,20 @@ body {
   /* background-attachment: fixed; */
 }
 
+.zodiac-page {
+  background-image: url("../images/frame.png");
+
+  max-width: 99%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  cursor: url('cursor.cur'), auto;
+  /* background-attachment: fixed; */
+}
 /* header {
   display: flex;
   max-width: 100%;
@@ -60,14 +73,14 @@ body {
 
 } */
 
-
+/*
 .logo {
   position: absolute;
   width: 100px;
   height: 100px;
   left: 30px;
   top: 35px;
-}
+} */
 
 .logo a {
   z-index: 100;
@@ -75,7 +88,7 @@ body {
   height: 100px;
 }
 
-.navigation {
+/* .navigation {
   position: absolute;
   top: 30px;
   right: 10px;
@@ -88,9 +101,10 @@ body {
   font: 12px,'Zaloga';
   font-weight: 700;
   font-style: bold;
-}
+} */
 
 .banner-content {
+  position: relative;
   font-family: 'Zaloga';
   color: #627042;
   font-size: 20px;
@@ -100,7 +114,7 @@ body {
   align-items: center;
   text-align: center;
   height: 600px;
-  width: 600px;
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 400px;
 }
@@ -148,17 +162,22 @@ body {
   flex-direction: column;
 }
 
-/* .text-container svg {
-  margin-top: 50px;
-} */
-/*
-.text-container svg {
-  z-index: 1;
-}
-*/
-/* .text-container svg {
-  padding-bottom: 10px;
-} */
+    .text-container {
+      position: relative;
+    }
+
+    .loader {
+      position: absolute;
+      top: 80%; /* vertical center */
+      left: 50%; /* horizontal center */
+      transform: translate(-50%, -50%); /* Center the loader */
+    }
+
+    .loader img {
+      max-width: 400px;
+      max-height: 400px;
+    }
+
 .text-container img {
   margin-top: -35px;
 }
@@ -175,17 +194,15 @@ body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   text-align: center;
   justify-content: center;
-  /* height: 850px; */
   width: 600px;
   height: 900px;
   margin-bottom: 100px;
   margin-top: -20px;
 }
 
-.zodiac-container {
+/* .zodiac-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -193,14 +210,14 @@ body {
   justify-content: center;
   height: 230px;
   width: 600px;
-}
+} */
 
 .zodiac-content h2 {
-  margin-top: -35px;
+  margin-top: -70px;
 }
 
 .main-zodiac-content {
-  display: flex;
+  height: 300px !important;
 }
 
 .aquarius-photo {
@@ -404,25 +421,67 @@ margin-bottom: 10px;
   height: 100px;
 } */
 
-/* Adjust height for smaller screens */
-@media (max-width: 1330px) {
-  .cancer-photo {
-    height: 300px; /* Adjust height for tablets and smaller devices */
+
+/* Media Queries */
+@media screen and (max-width: 1325px) {
+  .aries-photo,
+  .taurus-photo,
+  .gemini-photo,
+  .cancer-photo,
+  .leo-photo,
+  .virgo-photo,
+  .libra-photo,
+  .scorpio-photo,
+  .sagittarius-photo,
+  .capricorn-photo,
+  .aquarius-photo,
+  .pisces-photo {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
   }
+    /* .embed-responsive {
+      height: 200px;
+    } */
+
+    /* .cards-box {
+      height: 200px;
+    } */
 }
 
-@media (max-width: 1330px) {
 
-}
+  @media screen and (min-width: 600px) and (max-width: 1025px) {
+    .homepage,
+    .main-zodiac-content {
+      flex-direction: column;
+      align-items: center;
+      background-image: url("../images/tablet_bkg.png");
+      background-size: cover;
+    }
+  }
 
-@media screen and (max-width: 1000px) {
-  body {
-    background-size: auto 100%;
+@media screen and (max-width: 900px) {
+  .homepage {
+    flex-direction: column;
+    align-items: center;
+    background-image: none !important;
+    background-image: url("../images/tablet_bkg.png");
+    background-size: cover;
   }
 }
 
 @media screen and (max-width: 600px) {
-  body {
-    background-size: auto auto;
+  .homepage,
+  .main-zodiac-content {
+    background-image: none !important;
+    background-color: #fae6d4 !important; /* Set background color */
+    background-size: cover; /* Remove any background image */
+  }
+  .text-container {
+    margin-left: 60px;
+  }
+  .cards-carousel .cards-box {
+    display: flex;
+    flex-direction: column;
   }
 }
