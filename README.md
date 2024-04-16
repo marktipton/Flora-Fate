@@ -27,6 +27,6 @@ Enter your name for a more personalized experience as well as entering you date 
 
 
 ## Authors:
-  - Kier McAlister UI/UX Design: https://github.com/kier-ious
-  - Mark Tipton Full Stack Wizard: https://github.com/marktipton
-  - Tiffany Walker Project Manager: https://github.com/tiffanywalker22
+  - Kier McAlister - UI/UX Design: https://github.com/kier-ious
+  - Mark Tipton - Full Stack Wizard: https://github.com/marktipton
+  - Tiffany Walker - Project Manager: https://github.com/tiffanywalker22
