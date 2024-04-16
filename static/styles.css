@@ -444,4 +444,7 @@ margin-bottom: 10px;
     background-color: #fae6d4 !important; /* Set background color */
     background-size: cover; /* Remove any background image */
   }
+  .text-container {
+    margin-left: 60px;
+  }
 }
