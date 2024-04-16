@@ -13,6 +13,7 @@
         <!-- Include Slick theme CSS -->
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
         <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+
         <!-- bootstrap -->
         <script
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
@@ -32,8 +33,7 @@
         <!---Header-->
         <header>
             <div class="logo">
-                <a href="homepage.html"><img src="../../images/FF_favicon.svg"
-                        alt="logo"></a>
+                <a href="homepage.html"><img src="../../images/FF_favicon.svg" alt="logo"></a>
             </div>
             <div class="navigation">
                 <div class="user">
@@ -43,52 +43,56 @@
 
         <!---Banner-->
         <main class="row">
-            <section class="zodiac-content col-8 d-flex justify-content-center">
-                <div class="">
+            <section class="zodiac-content col-12 col-md-8 d-flex justify-content-center">
+                <div class="zodiac-arc">
                     <svg width="520" height="260">
-                        <path id="curve"
-                            d="M 0 240 C 0 240, 260 0, 520 240"></path>
+                        <path id="curve" d="M 0 240 C 0 240, 260 0, 520 240"></path>
                         <text class="curvedText-zodiac" text-anchor="middle">
-                            <textpath class="curvedTextPath" href="#curve"
-                                startOffset="50%">
+                            <textPath class="curvedTextPath" href="#curve" startOffset="50%">
                                 Aries
-                            </textpath>
+                            </textPath>
                         </text>
                     </svg>
                     <h2>Fiery Volcano</h2>
                 </div>
-                <div class="main-zodiac-content d-flex align-items-center">
-                    <div class="aries-photo col-12 col-sm-6"></div>
-                    <div class="col-12 col-sm-4 offset-1"><iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2DC3Q7JOmYe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe></div>
+                <div class="row main-zodiac-content d-flex align-items-center">
+                    <div class="aries-photo offset-0 offset-md-1 col-12 col-sm-6 col-md-6 pb-5 col-lg-4"></div>
+                    <div class="spotify-player col-12 col-sm-4 offset-1">
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/37i9dQZF1DX2DC3Q7JOmYe?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                        </div>
+                    </div>
                 </div>
-                <p class="mb-0 col-8 offset-2">Welcome to your garden, <span
-                    class="welcome-message"></span>. Aries, being a fire
-                    sign, resonates with the dynamic and passionate energy of
-                    the volcano. The passionflowers symbolize their intense
-                    drive and zest for life.</p>
+
+                <div class="wtyg col-12 col-md-8 offset-2">
+                    <p>Welcome to your garden, <span
+                        class="welcome-message"></span>. Aries, being a fire
+                        sign, resonates with the dynamic and passionate energy of
+                        the volcano. The passionflowers symbolize their intense
+                        drive and zest for life.</p>
+                </div>
+
                 <hr>
                 <h1 class="cards-title">Explore your garden</h1>
-                <section class="cards-carousel col-8 offset-2">
+                <section class="cards-carousel col-12 col-md-8 offset-2">
                     <div class="cards-box">
-                        <div class="d-flex justify-content-around align-items-center">
-                            <img src="../../images/passionflower.png"
-                                alt="flower" class="small-img">
+                        <div class="card-container d-flex justify-content-around align-items-center">
+                            <img src="../../images/passionflower.png" alt="flower" class="small-img">
                             <div class="card-text">
                                 <h2 class="">Passionflower</h2>
                                 <p>
                                     Passionflowers are exotic vines with intricate blooms symbolizing passion and spirituality, known for their beauty and cultural significance.</p>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-around align-items-center ">
-                            <img src="../../images/call_of_the_wild.jpg"
-                                alt="book" class="small-img">
+                        <div class="card-container d-flex justify-content-around align-items-center">
+                            <img src="../../images/vesuvius.jpg" alt="book" class="small-img">
                             <div class="card-text">
                                 <h2 class="">The Vesuvius Club</h2>
                                 <p>A witty mystery novel by Mark Gatiss, featuring the daring exploits of secret agent Lucifer Box in Edwardian England, as he uncovers a web of conspiracy and danger with style and humor.</p>
                             </div>
                         </div>
-                        <div class="d-flex justify-content-around align-items-center ">
-                            <img src="../../images/into_the_inferno.jpg" alt="movie">
+                        <div class="card-container d-flex justify-content-around align-items-center">
+                            <img src="../../images/into_the_inferno.jpg" alt="movie" class="small-img">
                             <div class="card-text">
                                 <h2 class="">Into the Inferno</h2>
                                 <p>A documentary delving into volcanoes, directed by Werner Herzog, offering insights into cultures living near active volcanoes.</p>
@@ -100,6 +104,16 @@
             <!---Footer--->
             <footer>
             </footer>
+            <!-- <script src="https://open.spotify.com/embed/iframe-api/v1" async>
+                window.onSpotifyIframeApiReady = (IFrameAPI) => {
+                const element = document.getElementById('embed-iframe');
+                const options = {
+                    uri: 'spotify:playlist:37i9dQZF1DXaeX3MJpiD4U'
+                    };
+                const callback = (EmbedController) => {};
+                IFrameAPI.createController(element, options, callback);
+                };
+            </script> -->
             <script>
                 $(document).ready(function(){
                     $('.cards-carousel .cards-box').slick({
@@ -119,4 +133,5 @@
                 });
             </script>
         </body>
-    </html>
+
+</html>
