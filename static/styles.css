@@ -408,7 +408,7 @@ margin-bottom: 10px;
 
 
 /* Media Queries */
-@media screen and (min-width: 600px) and (max-width: 1025px) {
+@media screen and (max-width: 1325px) {
   .aries-photo,
   .taurus-photo,
   .gemini-photo,
@@ -423,8 +423,11 @@ margin-bottom: 10px;
   .pisces-photo {
     height: 200px;
   }
+}
+  @media screen and (min-width: 600px) and (max-width: 1025px) {
 
-  .homepage {
+  .homepage,
+  .zodiac-page {
     background-image: url("../images/tablet_bkg.png");
     background-size: cover;
   }
@@ -439,7 +442,8 @@ margin-bottom: 10px;
 } */
 
 @media screen and (max-width: 600px) {
-  .homepage {
+  .homepage,
+  .zodiac-page {
     background-image: none !important;
     background-color: #fae6d4 !important; /* Set background color */
     background-size: cover; /* Remove any background image */
