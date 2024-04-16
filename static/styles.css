@@ -350,6 +350,7 @@ main form {
 .description {
   font-family: 'Zaloga';
   font-size: 14px;
+  font-weight: bold;
 }
 
 /* CARDS */
@@ -368,9 +369,9 @@ main form {
   font-family: 'Zaloga';
   font-size: 18px;
   margin-bottom: 20px;
-  font-weight: 300;
-  font-style: normal;
+  font-weight: bold;
   text-align: center;
+  letter-spacing: 1px;
 }
 
 .cards-box {
@@ -395,12 +396,14 @@ margin-bottom: 10px;
 }
 
 .card-text {
-  font: 'Metro', 12px;
+  font: 'Metro', 14px;
+  font-weight: bold;
   /* text-align: left; */
   width: 100%;
   margin-left: 10%;
   margin-right: 10%;
   margin-top: 3px;
+  letter-spacing: 1px;
 }
 
 .card-names {
