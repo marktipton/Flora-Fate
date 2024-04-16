@@ -37,7 +37,21 @@ main form {
   align-items: center;
 }
 
-body {
+.homepage {
+  background-image: url("../images/frame.png");
+  max-width: 99%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+  cursor: url('cursor.cur'), auto;
+  /* background-attachment: fixed; */
+}
+
+.zodiac-page {
   background-image: url("../images/frame.png");
 
   max-width: 99%;
@@ -51,7 +65,6 @@ body {
   cursor: url('cursor.cur'), auto;
   /* background-attachment: fixed; */
 }
-
 /* header {
   display: flex;
   max-width: 100%;
@@ -410,7 +423,7 @@ margin-bottom: 10px;
 
 
 /* Media Queries */
-@media (min-width: 1025px) {
+@media screen and (max-width: 1325px) {
   .aries-photo,
   .taurus-photo,
   .gemini-photo,
@@ -423,24 +436,34 @@ margin-bottom: 10px;
   .capricorn-photo,
   .aquarius-photo,
   .pisces-photo {
-    height: 200px; /* Adjust height for tablets and smaller devices */
+    height: 200px;
   }
+}
+  @media screen and (min-width: 600px) and (max-width: 1025px) {
 
-  body {
+  .homepage,
+  .zodiac-page {
+    background-image: url("../images/tablet_bkg.png");
     background-size: cover;
   }
 }
-
-@media screen and (max-width: 767px) {
-  body {
+/*
+@media screen and (max-width: 900px) {
+  .homepage {
+    background-image: none;
     background-image: url("../images/tablet_bkg.png");
-    background-image: cover;
+    background-size: cover;
   }
-}
+} */
 
 @media screen and (max-width: 600px) {
-  body {
+  .homepage,
+  .zodiac-page {
+    background-image: none !important;
     background-color: #fae6d4 !important; /* Set background color */
-    background-image: none; /* Remove any background image */
+    background-size: cover; /* Remove any background image */
+  }
+  .text-container {
+    margin-left: 60px;
   }
 }
