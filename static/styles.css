@@ -419,7 +419,6 @@ margin-bottom: 10px;
   height: 100px;
 } */
 
-
 /* Media Queries */
 @media screen and (min-width: 1325px) {
   .aries-photo,
@@ -471,14 +470,33 @@ margin-bottom: 10px;
   }
 } */
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 576px) {
   .homepage,
   .zodiac-page {
     background-image: none !important;
-    background-color: #fae6d4 !important; /* Set background color */
+    background-color: #fae6d4 !important;
     background-size: cover; /* Remove any background image */
   }
   .text-container {
     margin-left: 60px;
+  }
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 60px;
+  }
+  .wtyg {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+  }
+  .main-zodiac-content {
+    flex-direction: column;
+    align-items: center;
   }
 }
