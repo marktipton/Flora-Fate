@@ -39,7 +39,7 @@ main form {
 
 body {
   background-image: url("../images/frame.png");
-  position: absolute;
+
   max-width: 99%;
   height: 100%;
   left: 0;
@@ -60,14 +60,14 @@ body {
 
 } */
 
-
+/*
 .logo {
   position: absolute;
   width: 100px;
   height: 100px;
   left: 30px;
   top: 35px;
-}
+} */
 
 .logo a {
   z-index: 100;
@@ -75,7 +75,7 @@ body {
   height: 100px;
 }
 
-.navigation {
+/* .navigation {
   position: absolute;
   top: 30px;
   right: 10px;
@@ -88,9 +88,10 @@ body {
   font: 12px,'Zaloga';
   font-weight: 700;
   font-style: bold;
-}
+} */
 
 .banner-content {
+  position: relative;
   font-family: 'Zaloga';
   color: #627042;
   font-size: 20px;
@@ -100,7 +101,7 @@ body {
   align-items: center;
   text-align: center;
   height: 600px;
-  width: 600px;
+  width: 100%;
   margin-top: 50px;
   margin-bottom: 400px;
 }
@@ -146,7 +147,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  
+
 }
 
 .text-container img {
@@ -165,17 +166,15 @@ body {
   font-size: 20px;
   display: flex;
   flex-direction: column;
-  /* align-items: center; */
   text-align: center;
   justify-content: center;
-  /* height: 850px; */
   width: 600px;
   height: 900px;
   margin-bottom: 100px;
   margin-top: -20px;
 }
 
-.zodiac-container {
+/* .zodiac-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -183,14 +182,14 @@ body {
   justify-content: center;
   height: 230px;
   width: 600px;
-}
+} */
 
 .zodiac-content h2 {
-  margin-top: -35px;
+  margin-top: -70px;
 }
 
 .main-zodiac-content {
-  display: flex;
+  height: 300px !important;
 }
 
 .aquarius-photo {
@@ -409,7 +408,7 @@ margin-bottom: 10px;
   .capricorn-photo,
   .aquarius-photo,
   .pisces-photo {
-    height: 300px; /* Adjust height for tablets and smaller devices */
+    height: 200px; /* Adjust height for tablets and smaller devices */
   }
 
   body {
