@@ -163,7 +163,7 @@ main form {
 }
 
     .text-container {
-      position: relative; 
+      position: relative;
     }
 
     .loader {
@@ -437,33 +437,51 @@ margin-bottom: 10px;
   .aquarius-photo,
   .pisces-photo {
     height: 200px;
+    flex-direction: column;
+    align-items: center;
   }
-}
-  @media screen and (min-width: 600px) and (max-width: 1025px) {
+    /* .embed-responsive {
+      height: 200px;
+    } */
 
-  .homepage,
-  .zodiac-page {
-    background-image: url("../images/tablet_bkg.png");
-    background-size: cover;
-  }
+    /* .cards-box {
+      height: 200px;
+    } */
 }
-/*
+
+
+  @media screen and (min-width: 600px) and (max-width: 1025px) {
+    .homepage,
+    .main-zodiac-content {
+      flex-direction: column;
+      align-items: center;
+      background-image: url("../images/tablet_bkg.png");
+      background-size: cover;
+    }
+  }
+
 @media screen and (max-width: 900px) {
   .homepage {
-    background-image: none;
+    flex-direction: column;
+    align-items: center;
+    background-image: none !important;
     background-image: url("../images/tablet_bkg.png");
     background-size: cover;
   }
-} */
+}
 
 @media screen and (max-width: 600px) {
   .homepage,
-  .zodiac-page {
+  .main-zodiac-content {
     background-image: none !important;
     background-color: #fae6d4 !important; /* Set background color */
     background-size: cover; /* Remove any background image */
   }
   .text-container {
     margin-left: 60px;
+  }
+  .cards-carousel .cards-box {
+    display: flex;
+    flex-direction: column;
   }
 }
