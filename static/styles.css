@@ -160,8 +160,23 @@ main form {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
 }
+
+    .text-container {
+      position: relative; 
+    }
+
+    .loader {
+      position: absolute;
+      top: 80%; /* vertical center */
+      left: 50%; /* horizontal center */
+      transform: translate(-50%, -50%); /* Center the loader */
+    }
+
+    .loader img {
+      max-width: 400px;
+      max-height: 400px;
+    }
 
 .text-container img {
   margin-top: -35px;
