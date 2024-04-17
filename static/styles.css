@@ -473,14 +473,16 @@ margin-bottom: 10px;
   }
 } */
 
-@media screen and (max-width: 575px) {
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .homepage,
   .zodiac-page {
     background-image: none !important;
     background-color: #fae6d4 !important;
-    background-size: cover; /* Remove any background image */
+    background-size: cover;
   }
   .text-container {
+    margin: 0 auto;
     margin-left: 60px;
   }
   .card-container {
@@ -501,10 +503,7 @@ margin-bottom: 10px;
     padding-right: 140px !important;
   }
 
-  /* .main-zodiac-content {
-    flex-direction: column;
-    align-items: center;
-  } */
+
   .main-zodiac-content {
     height: 500px !important;
   }
@@ -525,17 +524,28 @@ margin-bottom: 10px;
   .capricorn-photo,
   .aquarius-photo,
   .pisces-photo {
-    padding-right: 70px;
-    margin-left: 20px;
+    /* padding-right: 70px; */
+    margin-left: auto;
+    margin-right: auto;
   }
   .cards-box {
-    margin-right: 130px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   h1 {
     padding-left: 60px;
   }
   .spotify-player {
-    margin-right: 50px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .zodiac-arc {
     margin-left: 50px;
