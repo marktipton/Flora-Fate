@@ -143,6 +143,16 @@ main form {
   width: 100%;
 }
 
+.zodiac-arc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  height: 200px;
+  width: 100%;
+}
+
 .curvedText {
   font-size: 6rem;
   fill: #627042;
@@ -402,11 +412,14 @@ margin-bottom: 10px;
   font-family: 'Zaloga';
   font-size: 12px;
 }
-.text-container svg {
+.text-container svg,
+.zodiac-arc svg {
   display: block;
+  margin: auto;
 }
 
-.text-container h1 {
+.text-container h1,
+.zodiac-arc h1 {
   display: none;
 }
 
@@ -522,7 +535,8 @@ margin-bottom: 10px;
     justify-content: center;
     align-items: center;
   }
-  .text-container h1 {
+  .text-container h1,
+  .zodiac-arc h1 {
     margin: 0;
     font-size: 3.5rem;
   }
@@ -536,13 +550,16 @@ margin-bottom: 10px;
   }
   .zodiac-arc {
     margin: auto;
+    padding-top: 80px;
   }
 
-  .text-container svg {
+  .text-container svg,
+  .zodiac-arc svg {
     display: none;
   }
 
-  .text-container h1 {
+  .text-container h1,
+  .zodiac-arc h1 {
     display: block;
   }
 
