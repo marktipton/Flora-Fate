@@ -214,21 +214,13 @@ main form {
   margin-top: -80px;
 }
 
-/* .zodiac-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  height: 230px;
-  width: 600px;
-} */
-
 .zodiac-content h2 {
   margin-top: -70px;
 }
 
 .main-zodiac-content {
+  justify-content: space-around !important;
+  margin: auto;
   height: 300px !important;
 }
 
@@ -239,7 +231,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .aries-photo {
@@ -249,7 +240,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 .cancer-photo {
   background-image: url(../images/cancer.png);
@@ -268,7 +258,6 @@ main form {
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .gemini-photo {
@@ -278,7 +267,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 .leo-photo {
   background-image: url(../images/leo.png);
@@ -287,7 +275,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .libra-photo {
@@ -297,7 +284,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .pisces-photo {
@@ -307,7 +293,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .sagittarius-photo {
@@ -317,7 +302,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .scorpio-photo {
@@ -327,7 +311,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .taurus-photo {
@@ -337,7 +320,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .virgo-photo {
@@ -347,7 +329,6 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin: auto;
 }
 
 .cards-carousel {
@@ -408,6 +389,7 @@ margin-bottom: 10px;
   width: 100%;
   margin-top: 3px;
   letter-spacing: 1px;
+  margin-left: 5px;
 }
 
 .card-names {
@@ -427,10 +409,6 @@ margin-bottom: 10px;
 .text-container h1 {
   display: none;
 }
-/* #embed-iframe {
-  width: 100px;
-  height: 100px;
-} */
 
 /* Media Queries */
 @media screen and (min-width: 1325px) {
