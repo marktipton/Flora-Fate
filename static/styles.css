@@ -42,7 +42,7 @@ main form {
 
 .homepage {
   background-image: url("../images/frame.png");
-  max-width: 99%;
+  max-width: 100%;
   height: 100%;
   left: 0;
   top: 0;
@@ -57,7 +57,7 @@ main form {
 .zodiac-page {
   background-image: url("../images/frame.png");
 
-  max-width: 99%;
+  max-width: 100%;
   height: 100%;
   left: 0;
   top: 0;
@@ -129,7 +129,7 @@ main form {
   text-align: center;
   justify-content: space-between;
   height: 450px;
-  width: 600px;
+  width: 100%;
 }
 
 .curvedText {
@@ -144,7 +144,7 @@ main form {
 
 #curve {
   fill: transparent;
-  width: 600px;
+  width: 100%;
 }
 
 .bi-flower3 {
