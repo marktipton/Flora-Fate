@@ -35,6 +35,9 @@ main form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .homepage {
