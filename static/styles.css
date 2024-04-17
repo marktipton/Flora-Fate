@@ -525,6 +525,9 @@ margin-bottom: 10px;
   .pisces-photo {
     margin-left: auto;
     margin-right: auto;
+    /* height: 370px; */
+    background-size: contain !important;
+    background-position: center !important;
     /* width: 50% !important; */
   }
   .cards-box {
