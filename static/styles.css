@@ -107,7 +107,7 @@ main form {
 } */
 
 .wtyg {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -404,8 +404,6 @@ margin-bottom: 10px;
   font-weight: bold;
   /* text-align: left; */
   width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
   margin-top: 3px;
   letter-spacing: 1px;
 }
@@ -566,5 +564,12 @@ margin-bottom: 10px;
 
   .text-container h1 {
     display: block;
+  }
+
+  .card-text p {
+    font-size: 18px;
+  }
+  .cards-title {
+    font-size: 34px;
   }
 }
