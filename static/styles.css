@@ -228,8 +228,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .aries-photo {
@@ -239,8 +238,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 .cancer-photo {
   background-image: url(../images/cancer.png);
@@ -259,8 +257,7 @@ main form {
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .gemini-photo {
@@ -270,8 +267,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 .leo-photo {
   background-image: url(../images/leo.png);
@@ -280,8 +276,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .libra-photo {
@@ -291,8 +286,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .pisces-photo {
@@ -302,8 +296,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .sagittarius-photo {
@@ -313,8 +306,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .scorpio-photo {
@@ -324,8 +316,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .taurus-photo {
@@ -335,8 +326,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .virgo-photo {
@@ -346,8 +336,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .description {
