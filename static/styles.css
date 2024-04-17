@@ -106,6 +106,18 @@ main form {
   font-style: bold;
 } */
 
+.wtyg {
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  text-align: center;
+  /* padding-right: 140px !important; */
+}
+
 .banner-content {
   position: relative;
   font-family: 'Zaloga';
@@ -228,8 +240,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .aries-photo {
@@ -239,8 +250,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 .cancer-photo {
   background-image: url(../images/cancer.png);
@@ -259,8 +269,7 @@ main form {
   background-position-x: center;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .gemini-photo {
@@ -270,8 +279,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 .leo-photo {
   background-image: url(../images/leo.png);
@@ -280,8 +288,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .libra-photo {
@@ -291,8 +298,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .pisces-photo {
@@ -302,8 +308,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .sagittarius-photo {
@@ -313,8 +318,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .scorpio-photo {
@@ -324,8 +328,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .taurus-photo {
@@ -335,8 +338,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .virgo-photo {
@@ -346,8 +348,7 @@ main form {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
-  margin-left: 42px;
-  margin-top: -50px;
+  margin: auto;
 }
 
 .description {
@@ -403,8 +404,6 @@ margin-bottom: 10px;
   font-weight: bold;
   /* text-align: left; */
   width: 100%;
-  margin-left: 10%;
-  margin-right: 10%;
   margin-top: 3px;
   letter-spacing: 1px;
 }
@@ -419,7 +418,13 @@ margin-bottom: 10px;
   font-family: 'Zaloga';
   font-size: 12px;
 }
+.text-container svg {
+  display: block;
+}
 
+.text-container h1 {
+  display: none;
+}
 /* #embed-iframe {
   width: 100px;
   height: 100px;
@@ -555,5 +560,16 @@ margin-bottom: 10px;
 
   .text-container svg {
     display: none;
+  }
+
+  .text-container h1 {
+    display: block;
+  }
+
+  .card-text p {
+    font-size: 18px;
+  }
+  .cards-title {
+    font-size: 34px;
   }
 }
