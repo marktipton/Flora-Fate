@@ -113,7 +113,6 @@ main form {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
   text-align: center;
   /* padding-right: 140px !important; */
 }
@@ -351,6 +350,9 @@ main form {
   margin: auto;
 }
 
+.cards-carousel {
+  margin: auto;
+}
 .description {
   font-family: 'Zaloga';
   font-size: 14px;
@@ -505,8 +507,8 @@ margin-bottom: 10px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 200px;
     text-align: center;
+    margin-top: 170px;
     /* padding-right: 140px !important; */
   }
 
