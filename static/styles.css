@@ -502,9 +502,8 @@ margin-bottom: 10px;
     align-items: center;
     margin-top: 200px;
     text-align: center;
-    padding-right: 140px !important;
+    /* padding-right: 140px !important; */
   }
-
 
   .main-zodiac-content {
     height: 500px !important;
@@ -537,8 +536,9 @@ margin-bottom: 10px;
     justify-content: center;
     align-items: center;
   }
-  h1 {
-    padding-left: 60px;
+  .text-container h1 {
+    margin: 0;
+    font-size: 3.5rem;
   }
   .spotify-player {
     margin-right: auto;
@@ -550,5 +550,9 @@ margin-bottom: 10px;
   }
   .zodiac-arc {
     margin: auto;
+  }
+
+  .text-container svg {
+    display: none;
   }
 }
