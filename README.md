@@ -19,7 +19,7 @@ Flora Fate: Is a Zodiac centered web application that provides a holistic experi
 - Artwork: Utilized Midjourney Bot in Discord for artwork creation as well as Procreate for custom frame and borders.
 
 ## How to Use
-1. Navigate to the Flora Fate website.
+1. Navigate to the Flora Fate website https://marktipton.github.io/Flora-Fate/.
 Enter your name for a more personalized experience as well as entering you date of birth.
 2. Explore a personalized journey tailored to your zodiac sign, including Spotify playlists, landscapes, flowers, and book and movie recommendations.
 4. Click on a playlist to open it in Spotify and start listening!
