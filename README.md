@@ -2,6 +2,7 @@
 
 Flora Fate: Is a Zodiac centered web application that provides a holistic experience tailored to each user's zodiac sign. From personalized Spotify playlists to curated landscapes, flowers, and book and movie suggestions, Flora Fate offers a multifaceted exploration of astrology tailored to match the energy of each zodiac sign.
 
+![darkstart](https://github.com/marktipton/Flora-Fate/blob/main/portfolio-1.jpg)
 ## Features
 
 - Zodiac Sign Selection: Users can be directed to their Zodiac page by       entereing their date of birth.
